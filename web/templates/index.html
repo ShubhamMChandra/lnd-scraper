@@ -64,6 +64,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Apply</button>
         <a href="/" class="btn btn-ghost">Clear</a>
+        <a href="/export/csv?search={{ filters.search }}&source={{ filters.source }}&has_email={{ '1' if filters.has_email else '' }}&confirmed={{ '1' if filters.confirmed else '' }}" class="btn btn-ghost">Export CSV</a>
     </form>
 </div>
 

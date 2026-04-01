@@ -11,11 +11,108 @@ import os
 import sys
 
 from config import CONFIG
-from models import Company, EnrichedCompany
+from models import Company, EnrichedCompany, HRContact
 from dedup import deduplicate
 from export import export_csv, export_excel, export_json
 
 logger = logging.getLogger("main")
+
+
+def _parse_employee_count(count_str: str) -> int:
+    """Parse employee count strings like '201-500', '1001-5000', '500+' into max number."""
+    if not count_str:
+        return 0
+    import re
+    # Match ranges like "201-500" or "1,001-5,000"
+    range_match = re.search(r"([\d,]+)\s*[-–]\s*([\d,]+)", count_str)
+    if range_match:
+        return int(range_match.group(2).replace(",", ""))
+    # Match "500+" or "500 employees"
+    num_match = re.search(r"([\d,]+)", count_str)
+    if num_match:
+        return int(num_match.group(1).replace(",", ""))
+    return 0
+
+
+def _filter_by_size(companies: list[Company], max_employees: int) -> list[Company]:
+    """Filter companies by employee count. Keep companies with unknown size."""
+    filtered = []
+    for c in companies:
+        emp = _parse_employee_count(c.employee_count or "")
+        if emp == 0 or emp <= max_employees:
+            filtered.append(c)
+        else:
+            logger.debug(f"Filtered out {c.name} (size: {c.employee_count})")
+    return filtered
+
+
+TECH_COMPANY_SIGNALS = [
+    "artificial intelligence", "ai company", "machine learning", "saas",
+    "software development", "cloud computing", "cybersecurity", "devops",
+    "data analytics", "big data", "blockchain", "fintech", "edtech",
+    "deep learning", "neural network", "computer vision", "nlp",
+    "software platform", "tech startup",
+]
+
+# Known large companies (1000+ employees) that may slip through without employee_count
+# Companies to exclude: known large enterprises + tech/trading-native firms
+EXCLUDED_COMPANIES = {
+    # Large enterprises (1000+ employees)
+    "mondelez", "mondelēz", "cdw", "bain", "bain & company", "mckinsey",
+    "deloitte", "accenture", "kpmg", "pwc", "ernst & young", "ey",
+    "jpmorgan", "goldman sachs", "citadel", "boeing", "abbott",
+    "caterpillar", "archer daniels", "baxter", "walgreens",
+    "united airlines", "allstate", "discover", "motorola",
+    "kraft heinz", "conagra", "us foods", "grainger",
+    "federal reserve", "chicago public schools", "cook county",
+    "coupa", "steelseries", "cgi", "nasdaq",
+    # Trading firms / hedge funds (tech/quant-native)
+    "imc trading", "imc", "peak6", "ninjatrader", "ninja trader",
+    "tastytrade", "tastylive", "tastyfx", "tastycrypto",
+    "jump trading", "akuna capital", "belvedere trading",
+    "wolverine trading", "drw", "spot trading", "optiver",
+    "occ", "cboe", "cme group",
+    "citadel", "balyasny", "millennium", "point72",
+    "ariel investments", "grosvenor", "adams street",
+    # Other tech-native
+    "floqast", "tempus", "avant", "storyblok", "bounteous",
+    "velocityehs", "abn amro",
+}
+
+
+def _filter_tech_companies(companies: list[Company]) -> list[Company]:
+    """Remove tech/AI-native companies and known enterprises. Keep middle-market traditional."""
+    filtered = []
+    for c in companies:
+        industry = (c.industry or "").lower()
+        name = c.name.lower()
+
+        # Check exclusion list (large enterprises, trading, hedge funds)
+        is_excluded = any(exc in name for exc in EXCLUDED_COMPANIES)
+        if is_excluded:
+            logger.debug(f"Filtered out excluded company: {c.name}")
+            continue
+
+        is_tech = False
+        for signal in TECH_COMPANY_SIGNALS:
+            if signal in industry or signal in name:
+                is_tech = True
+                break
+
+        # Also check for obvious tech/trading/hedge fund patterns
+        tech_name_signals = [" ai", " tech", "software", "data ", "cyber", "cloud",
+                             "trading", "hedge fund", "capital management",
+                             "quantitative", "algorithmic"]
+        for sig in tech_name_signals:
+            if sig in name:
+                is_tech = True
+                break
+
+        if is_tech:
+            logger.debug(f"Filtered out tech company: {c.name} (industry: {c.industry})")
+        else:
+            filtered.append(c)
+    return filtered
 
 
 def run_scrapers(limit: int = None) -> list[Company]:
@@ -26,8 +123,10 @@ def run_scrapers(limit: int = None) -> list[Company]:
     from scrapers.builtin_chicago import BuiltInChicagoScraper
     from scrapers.crains import CrainsScraper
     from scrapers.greatplacetowork import GreatPlaceToWorkScraper
+    from scrapers.ddg_search import DDGSearchScraper
 
     scrapers = [
+        DDGSearchScraper(CONFIG),          # FREE, unlimited - run first
         SerpAPIGoogleScraper(CONFIG),
         SerpAPIJobsScraper(CONFIG),
         GlassdoorScraper(CONFIG),
@@ -86,6 +185,18 @@ def run_scrapers(limit: int = None) -> list[Company]:
     with_domain = sum(1 for c in confirmed if c.domain)
     logger.info(f"Domain resolution: {with_domain}/{len(confirmed)} companies have domains")
 
+    # Filter by employee count if configured
+    max_emp = CONFIG.get("filters", {}).get("max_employees")
+    if max_emp:
+        before = len(confirmed)
+        confirmed = _filter_by_size(confirmed, max_emp)
+        logger.info(f"Size filter (max {max_emp}): {before} -> {len(confirmed)} companies")
+
+    # Filter out tech/AI-native companies
+    before = len(confirmed)
+    confirmed = _filter_tech_companies(confirmed)
+    logger.info(f"Tech filter: {before} -> {len(confirmed)} companies (removed tech/AI-native)")
+
     if limit:
         confirmed = confirmed[:limit]
 
@@ -104,18 +215,21 @@ def run_enrichment(companies: list[Company]) -> list[EnrichedCompany]:
     from enrichment.hunter import HunterEnricher
     from enrichment.google_search import GoogleSearchEnricher
     from enrichment.website_team import WebsiteTeamEnricher
+    from scrapers.ddg_search import DDGContactFinder
+    from enrichment.email_guesser import guess_email
 
     apollo = ApolloEnricher(CONFIG)
     hunter = HunterEnricher(CONFIG)
     google = GoogleSearchEnricher(CONFIG)
     website = WebsiteTeamEnricher(CONFIG)
+    ddg_contacts = DDGContactFinder()
 
     results = []
     for i, company in enumerate(companies):
         logger.info(f"Enriching [{i+1}/{len(companies)}]: {company.name}")
         contacts = []
 
-        # Try Hunter first (returns actual emails)
+        # Try Hunter first (returns actual emails, 50 credits/mo)
         if not contacts and CONFIG["enrichment"]["hunter"]["enabled"] and company.domain:
             contacts = hunter.search_hr_contacts(company.name, company.domain)
             if contacts:
@@ -127,21 +241,29 @@ def run_enrichment(companies: list[Company]) -> list[EnrichedCompany]:
             if contacts:
                 logger.info(f"  -> Apollo: {len(contacts)} contacts ({sum(1 for c in contacts if c.email)} with email)")
 
-        # Try Google search for LinkedIn profiles
+        # Try DDG for LinkedIn profiles (FREE, unlimited)
+        if not contacts:
+            ddg_results = ddg_contacts.find_hr_contacts(company.name, company.domain)
+            if ddg_results:
+                logger.info(f"  -> DDG: {len(ddg_results)} contacts (LinkedIn profiles)")
+                for dr in ddg_results:
+                    contact = HRContact(
+                        company_name=company.name,
+                        company_domain=company.domain,
+                        first_name=dr["first_name"],
+                        last_name=dr["last_name"],
+                        full_name=dr["full_name"],
+                        title=dr.get("title"),
+                        linkedin_url=dr.get("linkedin_url"),
+                        source="ddg_search",
+                    )
+                    contacts.append(contact)
+
+        # Try SerpAPI Google as backup
         if not contacts and CONFIG["enrichment"]["google_search"]["enabled"]:
             google_contacts = google.search_hr_contacts(company.name, company.domain)
             if google_contacts:
-                logger.info(f"  -> Google: {len(google_contacts)} contacts (LinkedIn profiles)")
-                # Try to get emails for Google-found contacts via Hunter email finder
-                if CONFIG["enrichment"]["hunter"]["enabled"] and company.domain and hunter.credits_used < hunter.max_credits:
-                    for gc in google_contacts:
-                        if gc.first_name and gc.last_name:
-                            email = hunter.find_email(company.domain, gc.first_name, gc.last_name)
-                            if email:
-                                gc.email = email
-                                gc.email_confidence = 0.8
-                                gc.source = "google_search+hunter"
-                                logger.info(f"    -> Found email for {gc.full_name} via Hunter")
+                logger.info(f"  -> Google: {len(google_contacts)} contacts")
                 contacts = google_contacts
 
         # Try website team pages
@@ -149,6 +271,28 @@ def run_enrichment(companies: list[Company]) -> list[EnrichedCompany]:
             contacts = website.search_hr_contacts(company.name, company.domain)
             if contacts:
                 logger.info(f"  -> Website: {len(contacts)} contacts")
+
+        # EMAIL ENRICHMENT: For any contact without email, try to guess + verify
+        if company.domain:
+            for c in contacts:
+                if not c.email and c.first_name and c.last_name:
+                    # Try Hunter email finder first (verified)
+                    if hunter.credits_used < hunter.max_credits:
+                        email = hunter.find_email(company.domain, c.first_name, c.last_name)
+                        if email:
+                            c.email = email
+                            c.email_confidence = 0.85
+                            c.source = f"{c.source}+hunter"
+                            logger.info(f"    -> Hunter email: {c.full_name}")
+                            continue
+
+                    # Fall back to email pattern guessing + SMTP verify (FREE)
+                    guessed = guess_email(c.first_name, c.last_name, company.domain)
+                    if guessed:
+                        c.email = guessed
+                        c.email_confidence = 0.6  # Lower confidence for guessed
+                        c.source = f"{c.source}+guess"
+                        logger.info(f"    -> Guessed email: {guessed}")
 
         if not contacts:
             logger.info(f"  -> No contacts found")

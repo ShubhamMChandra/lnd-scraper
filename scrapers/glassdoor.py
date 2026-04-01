@@ -77,17 +77,25 @@ class GlassdoorScraper(BaseScraper):
                         # Remove "Working at " prefix
                         company_name = re.sub(r"^Working at\s+", "", company_name)
 
-                if not company_name or len(company_name) < 2:
+                if not company_name or len(company_name) < 3:
                     continue
 
-                # Filter junk
+                # Filter junk: remove anything that looks like a snippet, not a company name
                 junk_patterns = [
                     r"^\d+", r"^perk\b", r"^benefit\b", r"^review\b",
-                    r"^salary\b", r"^job\b", r"^interview\b",
+                    r"^salary\b", r"^job\b", r"^interview\b", r"^employee\b",
                 ]
                 if any(re.match(p, company_name.lower()) for p in junk_patterns):
                     continue
-                if len(company_name) > 60:
+                if len(company_name) > 50:
+                    continue
+                # Reject names containing quotes or keywords that suggest snippet fragments
+                if '"' in company_name or ":" in company_name:
+                    continue
+                noise_words = ["training", "tuition", "reimbursement", "benefit",
+                               "budget", "stipend", "professional development",
+                               "learning and development", "employee", "director of"]
+                if any(nw in company_name.lower() for nw in noise_words):
                     continue
 
                 key = company_name.lower().strip()

@@ -19,14 +19,22 @@ QUERIES = [
     '"Chicago" "we offer" "professional development" budget',
     '"Chicago" "$" "learning" "per year" stipend employee',
     'best companies Chicago professional development benefits 2025',
-    'Chicago startups learning development stipend employee benefits',
-    'Chicago tech companies education reimbursement benefits',
     '"Chicago" "career development fund" OR "skill development budget"',
     '"Chicago" "conference budget" OR "training allowance" company',
     'site:builtin.com Chicago "education stipend" OR "tuition reimbursement"',
     '"Chicago office" "learning and development" benefits company',
     'Chicago IL companies "professional development budget" employee perks',
     '"Chicago" "annual learning" OR "annual education" stipend company',
+    # Traditional/middle-market industry queries
+    'Chicago healthcare company "professional development" "training budget"',
+    'Chicago manufacturing company "learning and development" budget',
+    'Chicago financial services "professional development stipend" employees',
+    'Chicago nonprofit "professional development" budget employee',
+    'Chicago law firm "professional development" stipend OR budget',
+    'Chicago construction company "training budget" OR "education reimbursement"',
+    'Chicago insurance company "professional development" OR "tuition reimbursement"',
+    'Chicago accounting firm "professional development" budget',
+    'Chicago logistics "learning and development" OR "training budget"',
 ]
 
 # Common patterns that indicate a company name in search results
@@ -64,7 +72,10 @@ def _extract_companies_from_result(result: dict) -> list[dict]:
     at_match = re.search(r"(?:at|@)\s+([A-Z][A-Za-z0-9\s&.]+?)(?:\s*[-|,]|\s+in\s+Chicago)", title)
     if at_match:
         name = at_match.group(1).strip()
-        if name.lower() not in COMPANY_NOISE and len(name) > 2:
+        if (name.lower() not in COMPANY_NOISE
+                and len(name) > 3
+                and not name.lower().startswith(("the ", "a ", "an "))
+                and re.search(r"[A-Z]", name)):
             companies.append({"name": name, "url": link, "evidence": snippet})
 
     return companies

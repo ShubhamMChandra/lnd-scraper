@@ -1,7 +1,13 @@
+import csv
+import io
 import json
 import os
+import sys
 
-from flask import Flask, render_template, request, jsonify
+# Ensure project root is on sys.path for Vercel serverless
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+from flask import Flask, render_template, request, jsonify, Response
 
 from models import EnrichedCompany
 
@@ -90,9 +96,71 @@ def create_app():
 
         return render_template("company.html", result=match)
 
+    @app.route("/export/csv")
+    def export_csv_download():
+        results = load_results()
+
+        # Apply same filters as index
+        search = request.args.get("search", "").lower()
+        source_filter = request.args.get("source", "")
+        has_email_only = request.args.get("has_email", "") == "1"
+        confirmed_only = request.args.get("confirmed", "") == "1"
+
+        if search:
+            results = [r for r in results if search in r.company.name.lower()
+                        or (r.company.domain and search in r.company.domain.lower())
+                        or (r.company.industry and search in r.company.industry.lower())]
+        if source_filter:
+            results = [r for r in results if source_filter in r.company.sources]
+        if has_email_only:
+            results = [r for r in results if any(c.email for c in r.contacts)]
+        if confirmed_only:
+            results = [r for r in results if r.company.has_lnd_budget]
+
+        output = io.StringIO()
+        writer = csv.writer(output)
+        writer.writerow([
+            "Company", "Domain", "Industry", "Employee Count", "Confidence",
+            "L&D Confirmed", "L&D Evidence", "Sources",
+            "Contact Name", "Contact Title", "Contact Email", "Contact LinkedIn", "Contact Source"
+        ])
+
+        for r in results:
+            if r.contacts:
+                for contact in r.contacts:
+                    writer.writerow([
+                        r.company.name, r.company.domain or "", r.company.industry or "",
+                        r.company.employee_count or "", f"{int(r.company.confidence_score * 100)}%",
+                        "Yes" if r.company.has_lnd_budget else "No",
+                        "; ".join(r.company.lnd_evidence[:3]),
+                        ", ".join(r.company.sources),
+                        contact.full_name or "", contact.title or "",
+                        contact.email or "", contact.linkedin_url or "",
+                        contact.source or "",
+                    ])
+            else:
+                writer.writerow([
+                    r.company.name, r.company.domain or "", r.company.industry or "",
+                    r.company.employee_count or "", f"{int(r.company.confidence_score * 100)}%",
+                    "Yes" if r.company.has_lnd_budget else "No",
+                    "; ".join(r.company.lnd_evidence[:3]),
+                    ", ".join(r.company.sources),
+                    "", "", "", "", "",
+                ])
+
+        csv_data = output.getvalue()
+        return Response(
+            csv_data,
+            mimetype="text/csv",
+            headers={"Content-Disposition": "attachment; filename=lnd_companies.csv"}
+        )
+
     @app.route("/api/results")
     def api_results():
         results = load_results()
         return jsonify([r.to_dict() for r in results])
 
     return app
+
+
+app = create_app()

@@ -40,8 +40,36 @@ def merge_companies(existing: Company, new: Company) -> Company:
     return existing
 
 
+JUNK_NAMES = {
+    "chicago", "we offer", "work", "employee", "company", "employer",
+    "budget", "benefit", "benefits", "training", "development",
+    "the", "a", "an", "perk", "review",
+}
+
+
+def _is_valid_company_name(name: str) -> bool:
+    """Filter obviously bad company names."""
+    norm = name.lower().strip()
+    if norm in JUNK_NAMES:
+        return False
+    if len(norm) < 3:
+        return False
+    if '"' in name:
+        return False
+    # Names with colons usually indicate snippet fragments
+    if ":" in name and "LLC" not in name:
+        return False
+    # Names that are just common words
+    if re.match(r"^(the|a|an)\s+\w+$", norm):
+        return False
+    return True
+
+
 def deduplicate(companies: list[Company], fuzzy_threshold: int = 85) -> list[Company]:
     """Deduplicate companies by normalized name, domain, and fuzzy matching."""
+    # Filter invalid names first
+    companies = [c for c in companies if _is_valid_company_name(c.name)]
+
     # Normalize all names
     for c in companies:
         c.normalized_name = normalize_company_name(c.name)

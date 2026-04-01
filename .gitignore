@@ -2,9 +2,12 @@
 __pycache__/
 *.pyc
 data/raw/
-data/final/
+data/final/*.csv
+data/final/*.xlsx
+!data/final/results.json
 .venv/
 *.egg-info/
 dist/
 build/
 .DS_Store
+.vercel

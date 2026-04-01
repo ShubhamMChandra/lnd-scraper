@@ -49,15 +49,16 @@ class BuiltInChicagoScraper(BaseScraper):
     def _scrape_company_list(self, page, companies: dict):
         base_url = "https://builtin.com/companies?search=&industry=&perk=continuing-education-stipend%2Ctuition-reimbursement%2Cjob-training-conferences&city=Chicago"
 
-        self.logger.info(f"Loading Built In Chicago: {base_url}")
-        page.goto(base_url, wait_until="networkidle", timeout=60000)
-        time.sleep(random.uniform(3, 5))
-
-        page_num = 1
+        # Paginate using URL page parameter
+        page_num = 0
         max_pages = 25
 
         while page_num <= max_pages:
-            self.logger.info(f"Processing page {page_num}")
+            url = f"{base_url}&page={page_num}" if page_num > 0 else base_url
+            self.logger.info(f"Loading Built In Chicago page {page_num + 1}: {url}")
+
+            page.goto(url, wait_until="networkidle", timeout=60000)
+            time.sleep(random.uniform(3, 5))
 
             # Find all links to company profile pages: /company/<slug>
             links = page.query_selector_all('a[href*="/company/"]')
@@ -74,7 +75,7 @@ class BuiltInChicagoScraper(BaseScraper):
 
                 slug = match.group(1)
 
-                # Filter out noise: numbers, very short text, generic words
+                # Filter out noise
                 if not text or len(text) < 2 or len(text) > 80:
                     continue
                 if re.match(r"^\d+\s*(Benefits|Jobs|Offices)", text):
@@ -85,40 +86,32 @@ class BuiltInChicagoScraper(BaseScraper):
                 if slug not in company_links:
                     company_links[slug] = {"name": text, "href": href, "slug": slug}
 
-            self.logger.info(f"  Found {len(company_links)} company links on page {page_num}")
+            self.logger.info(f"  Found {len(company_links)} company links on page {page_num + 1}")
 
+            if not company_links:
+                self.logger.info("  No more companies, stopping pagination")
+                break
+
+            new_count = 0
             for slug, info in company_links.items():
                 name = info["name"]
                 key = name.lower()
-                if key in companies:
-                    continue
+                if key not in companies:
+                    profile_url = f"https://builtin.com/company/{slug}"
+                    companies[key] = Company(
+                        name=name,
+                        has_lnd_budget=True,
+                        lnd_evidence=["Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)"],
+                        lnd_source_urls=[profile_url],
+                        sources=["builtin_chicago"],
+                        confidence_score=0.8,
+                    )
+                    new_count += 1
 
-                profile_url = f"https://builtin.com/company/{slug}"
-                companies[key] = Company(
-                    name=name,
-                    has_lnd_budget=True,
-                    lnd_evidence=["Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)"],
-                    lnd_source_urls=[profile_url],
-                    sources=["builtin_chicago"],
-                    confidence_score=0.8,
-                )
+            self.logger.info(f"  {new_count} new companies added (total: {len(companies)})")
 
-            # Try pagination
-            next_btn = page.query_selector('a[rel="next"], [class*="pager"] a:has-text("Next"), a:has-text("Next page"), a[aria-label="Next page"]')
-            if next_btn:
-                try:
-                    next_btn.click()
-                    time.sleep(random.uniform(3, 5))
-                    page.wait_for_load_state("networkidle", timeout=15000)
-                    page_num += 1
-                except Exception as e:
-                    self.logger.debug(f"Pagination failed: {e}")
-                    break
-            else:
-                # Try scroll-based loading
-                prev_count = len(companies)
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(random.uniform(3, 5))
-                if len(companies) == prev_count:
-                    break
-                page_num += 1
+            if new_count == 0:
+                self.logger.info("  No new companies on this page, stopping")
+                break
+
+            page_num += 1

@@ -45,7 +45,10 @@ class SerpAPIJobsScraper(BaseScraper):
             jobs = results.get("jobs_results", [])
             for job in jobs:
                 company_name = job.get("company_name", "").strip()
-                if not company_name:
+                if not company_name or len(company_name) < 3 or len(company_name) > 60:
+                    continue
+                # Filter junk names
+                if any(x in company_name.lower() for x in ['"', ":", "employee", "director", "manager"]):
                     continue
 
                 key = company_name.lower()
