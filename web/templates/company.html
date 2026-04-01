@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}{{ result.company.name }} - Chicago L&D Finder{% endblock %}
+
+{% block content %}
+<a href="/" class="back-link">&larr; Back to all companies</a>
+
+<div class="company-header">
+    <div class="company-title-row">
+        <h1>{{ result.company.name }}</h1>
+        {% if result.company.has_lnd_budget %}
+        <span class="badge badge-confirmed">Confirmed L&D</span>
+        {% else %}
+        <span class="badge badge-unconfirmed">Unconfirmed</span>
+        {% endif %}
+    </div>
+    {% if result.company.domain %}
+    <a href="https://{{ result.company.domain }}" target="_blank" class="company-domain">{{ result.company.domain }} &nearr;</a>
+    {% endif %}
+</div>
+
+<div class="detail-grid">
+    <!-- Company Info Card -->
+    <div class="detail-card">
+        <h2>Company Info</h2>
+        <dl class="detail-list">
+            {% if result.company.industry %}
+            <div class="detail-row">
+                <dt>Industry</dt>
+                <dd>{{ result.company.industry }}</dd>
+            </div>
+            {% endif %}
+            {% if result.company.employee_count %}
+            <div class="detail-row">
+                <dt>Size</dt>
+                <dd>{{ result.company.employee_count }}</dd>
+            </div>
+            {% endif %}
+            <div class="detail-row">
+                <dt>Location</dt>
+                <dd>{{ result.company.headquarters_city }}</dd>
+            </div>
+            <div class="detail-row">
+                <dt>Confidence</dt>
+                <dd>
+                    <div class="confidence-bar confidence-bar-lg">
+                        <div class="confidence-fill {% if result.company.confidence_score >= 0.7 %}conf-high{% elif result.company.confidence_score >= 0.4 %}conf-medium{% else %}conf-low{% endif %}"
+                             style="width: {{ (result.company.confidence_score * 100)|int }}%"></div>
+                    </div>
+                    <span>{{ (result.company.confidence_score * 100)|int }}%</span>
+                </dd>
+            </div>
+            <div class="detail-row">
+                <dt>Sources</dt>
+                <dd>
+                    {% for source in result.company.sources %}
+                    <span class="source-badge">{{ source }}</span>
+                    {% endfor %}
+                </dd>
+            </div>
+        </dl>
+    </div>
+
+    <!-- L&D Evidence Card -->
+    <div class="detail-card">
+        <h2>L&D Evidence</h2>
+        {% if result.company.lnd_evidence %}
+        <ul class="evidence-list">
+            {% for evidence in result.company.lnd_evidence %}
+            <li>{{ evidence }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-text">No specific evidence collected yet.</p>
+        {% endif %}
+
+        {% if result.company.lnd_source_urls %}
+        <h3>Source URLs</h3>
+        <ul class="source-urls">
+            {% for url in result.company.lnd_source_urls %}
+            <li><a href="{{ url }}" target="_blank">{{ url[:80] }}{% if url|length > 80 %}...{% endif %}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+
+<!-- HR Contacts -->
+<div class="detail-card contacts-card">
+    <h2>HR Contacts ({{ result.contacts|length }})</h2>
+    {% if result.contacts %}
+    <div class="contacts-grid">
+        {% for contact in result.contacts %}
+        <div class="contact-card">
+            <div class="contact-name">{{ contact.full_name or 'Unknown' }}</div>
+            {% if contact.title %}
+            <div class="contact-title">{{ contact.title }}</div>
+            {% endif %}
+            <div class="contact-details">
+                {% if contact.email %}
+                <div class="contact-field">
+                    <span class="field-icon">&#9993;</span>
+                    <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                    {% if contact.email_confidence %}
+                    <span class="confidence-mini {% if contact.email_confidence >= 0.8 %}conf-high{% elif contact.email_confidence >= 0.5 %}conf-medium{% else %}conf-low{% endif %}">
+                        {{ (contact.email_confidence * 100)|int }}%
+                    </span>
+                    {% endif %}
+                </div>
+                {% endif %}
+                {% if contact.linkedin_url %}
+                <div class="contact-field">
+                    <span class="field-icon">in</span>
+                    <a href="{{ contact.linkedin_url }}" target="_blank">LinkedIn Profile</a>
+                </div>
+                {% endif %}
+                {% if contact.phone %}
+                <div class="contact-field">
+                    <span class="field-icon">&#9742;</span>
+                    <span>{{ contact.phone }}</span>
+                </div>
+                {% endif %}
+            </div>
+            <div class="contact-source">via {{ contact.source }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state empty-state-sm">
+        <p>No HR contacts found for this company.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

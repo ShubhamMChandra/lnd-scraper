@@ -1,0 +1,10 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+playwright>=1.40.0
+playwright-stealth>=1.0.6
+pandas>=2.1.0
+openpyxl>=3.1.0
+python-dotenv>=1.0.0
+thefuzz[speedup]>=0.20.0
+google-search-results>=2.4.2
+flask>=3.0.0

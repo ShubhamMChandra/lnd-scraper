@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Chicago L&D Company Finder{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">&#9670;</span>
+                Chicago L&D Finder
+            </a>
+            <div class="nav-links">
+                <a href="/">Dashboard</a>
+                <a href="/api/results" target="_blank">API</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <p>Chicago L&D Company Finder &mdash; Data sourced from SerpAPI, Built In, Glassdoor, Crain's, Great Place to Work, Apollo, Hunter</p>
+    </footer>
+</body>
+</html>

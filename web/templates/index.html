@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Stats Cards -->
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.total }}</div>
+        <div class="stat-label">Companies Found</div>
+    </div>
+    <div class="stat-card stat-confirmed">
+        <div class="stat-number">{{ stats.confirmed }}</div>
+        <div class="stat-label">Confirmed L&D</div>
+    </div>
+    <div class="stat-card stat-contacts">
+        <div class="stat-number">{{ stats.with_contacts }}</div>
+        <div class="stat-label">With HR Contacts</div>
+    </div>
+    <div class="stat-card stat-email">
+        <div class="stat-number">{{ stats.with_email }}</div>
+        <div class="stat-label">With Email</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">{{ stats.total_contacts }}</div>
+        <div class="stat-label">Total Contacts</div>
+    </div>
+</div>
+
+<!-- Filters -->
+<div class="filters-bar">
+    <form method="GET" action="/" class="filters-form">
+        <div class="filter-group">
+            <input type="text" name="search" placeholder="Search companies..."
+                   value="{{ filters.search }}" class="search-input" autocomplete="off">
+        </div>
+        <div class="filter-group">
+            <select name="source" class="filter-select">
+                <option value="">All Sources</option>
+                {% for source in all_sources %}
+                <option value="{{ source }}" {% if filters.source == source %}selected{% endif %}>{{ source }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter-group">
+            <select name="sort" class="filter-select">
+                <option value="confidence" {% if filters.sort == 'confidence' %}selected{% endif %}>Confidence</option>
+                <option value="name" {% if filters.sort == 'name' %}selected{% endif %}>Name</option>
+                <option value="contacts" {% if filters.sort == 'contacts' %}selected{% endif %}>Contacts</option>
+                <option value="industry" {% if filters.sort == 'industry' %}selected{% endif %}>Industry</option>
+            </select>
+            <select name="dir" class="filter-select filter-select-sm">
+                <option value="desc" {% if filters.dir == 'desc' %}selected{% endif %}>Desc</option>
+                <option value="asc" {% if filters.dir == 'asc' %}selected{% endif %}>Asc</option>
+            </select>
+        </div>
+        <div class="filter-group filter-toggles">
+            <label class="toggle-label">
+                <input type="checkbox" name="confirmed" value="1" {% if filters.confirmed %}checked{% endif %}>
+                <span>Confirmed L&D</span>
+            </label>
+            <label class="toggle-label">
+                <input type="checkbox" name="has_email" value="1" {% if filters.has_email %}checked{% endif %}>
+                <span>Has Email</span>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Apply</button>
+        <a href="/" class="btn btn-ghost">Clear</a>
+    </form>
+</div>
+
+<!-- Results Table -->
+{% if results %}
+<div class="table-wrapper">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th class="col-name">Company</th>
+                <th class="col-domain">Domain</th>
+                <th class="col-industry">Industry</th>
+                <th class="col-evidence">L&D Evidence</th>
+                <th class="col-confidence">Confidence</th>
+                <th class="col-sources">Sources</th>
+                <th class="col-contacts">Contacts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in results %}
+            <tr class="{% if r.company.confidence_score >= 0.7 %}row-high{% elif r.company.confidence_score >= 0.4 %}row-medium{% else %}row-low{% endif %}">
+                <td class="col-name">
+                    <a href="/company/{{ r.company.name }}" class="company-link">
+                        {{ r.company.name }}
+                    </a>
+                    {% if r.company.employee_count %}
+                    <span class="meta-tag">{{ r.company.employee_count }}</span>
+                    {% endif %}
+                </td>
+                <td class="col-domain">
+                    {% if r.company.domain %}
+                    <a href="https://{{ r.company.domain }}" target="_blank" class="domain-link">{{ r.company.domain }}</a>
+                    {% endif %}
+                </td>
+                <td class="col-industry">{{ r.company.industry or '' }}</td>
+                <td class="col-evidence">
+                    <div class="evidence-text">{{ r.company.lnd_evidence[0][:120] if r.company.lnd_evidence else '' }}{% if r.company.lnd_evidence and r.company.lnd_evidence[0]|length > 120 %}...{% endif %}</div>
+                    {% if r.company.lnd_evidence|length > 1 %}
+                    <span class="meta-tag">+{{ r.company.lnd_evidence|length - 1 }} more</span>
+                    {% endif %}
+                </td>
+                <td class="col-confidence">
+                    <div class="confidence-bar">
+                        <div class="confidence-fill {% if r.company.confidence_score >= 0.7 %}conf-high{% elif r.company.confidence_score >= 0.4 %}conf-medium{% else %}conf-low{% endif %}"
+                             style="width: {{ (r.company.confidence_score * 100)|int }}%"></div>
+                    </div>
+                    <span class="confidence-text">{{ (r.company.confidence_score * 100)|int }}%</span>
+                </td>
+                <td class="col-sources">
+                    {% for source in r.company.sources %}
+                    <span class="source-badge">{{ source }}</span>
+                    {% endfor %}
+                </td>
+                <td class="col-contacts">
+                    {% if r.contacts %}
+                    <span class="contact-count {% if r.contacts|selectattr('email')|list %}has-email{% endif %}">
+                        {{ r.contacts|length }}
+                        {% if r.contacts|selectattr('email')|list %}
+                        <span class="email-indicator" title="Has email">&#9993;</span>
+                        {% endif %}
+                    </span>
+                    {% else %}
+                    <span class="no-contacts">0</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<div class="empty-state">
+    <div class="empty-icon">&#128269;</div>
+    <h3>No results yet</h3>
+    <p>Run the scraper first: <code>python main.py</code></p>
+    <p>Or adjust your filters above.</p>
+</div>
+{% endif %}
+{% endblock %}
