@@ -1,118 +1,781 @@
 [
   {
     "company": {
-      "name": "Storyblok",
-      "domain": "storyblok.com",
+      "name": "Lensa",
+      "domain": "lensa.com",
       "industry": null,
       "employee_count": null,
       "headquarters_city": "Chicago",
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Apply for Territory Account Executive - Chicago, IL at Storyblok. Remote Full Time position."
+        "... The Director, AI Upskilling,Learning&Developmentwill lead the McDonald\u2019s AI enablement strategy, shaping howemployeeslearn, adopt,and..."
       ],
       "lnd_source_urls": [
-        "https://www.remotenomadjobs.com/remote-jobs/territory-account-executive-chicago-il-698ff5e7d36414440830103b"
+        "https://www.learningoperations.com/jobs/249298528-director-learning-development"
       ],
       "benefits_summary": null,
       "sources": [
-        "serpapi_google"
+        "ddg_search"
       ],
       "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:06.680671",
-      "normalized_name": "storyblok"
+      "last_updated": "2026-03-31T21:37:03.638958",
+      "normalized_name": "lensa"
     },
     "contacts": [
       {
-        "company_name": "Storyblok",
-        "company_domain": "storyblok.com",
-        "first_name": "Daniel",
-        "last_name": "Mendoza",
-        "full_name": "Daniel Mendoza",
+        "company_name": "Lensa",
+        "company_domain": "lensa.com",
+        "first_name": "Gergo",
+        "last_name": "Vari",
+        "full_name": "Gergo Vari",
         "title": null,
-        "email": "daniel.mendoza@storyblok.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/daniel-mendoza-503396152",
+        "email": "gergo.vari@lensa.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/gergovari",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "google_search+guess"
       },
       {
-        "company_name": "Storyblok",
-        "company_domain": "storyblok.com",
-        "first_name": "Gillian",
-        "last_name": "Mays, M.Sc.",
-        "full_name": "Gillian Mays, M.Sc.",
+        "company_name": "Lensa",
+        "company_domain": "lensa.com",
+        "first_name": "Sophie",
+        "last_name": "Hayes",
+        "full_name": "Sophie Hayes",
         "title": null,
-        "email": "gillian.mays@storyblok.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/gillian-c-mays",
+        "email": "sophie.hayes@lensa.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/sophie-hayes-42083719b",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "google_search+guess"
+      },
+      {
+        "company_name": "Lensa",
+        "company_domain": "lensa.com",
+        "first_name": "Peggy",
+        "last_name": "Obrien",
+        "full_name": "Peggy Obrien",
+        "title": null,
+        "email": "peggy.obrien@lensa.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/peggy-obrien-5a0697375",
+        "phone": null,
+        "source": "google_search+guess"
       }
     ]
   },
   {
     "company": {
-      "name": "Pythian",
-      "domain": "pythias.org",
+      "name": "Offer Tuition Reimbursement",
+      "domain": "builtinchicago.org",
       "industry": null,
       "employee_count": null,
       "headquarters_city": "Chicago",
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Are you a Chicago based Sales Executive who has experience in hunting for new business ... training allowance; participate in professional ..."
+        "Thecompanyprovides its employees with both aneducationstipendandtuitionreimbursementprogram to further their learning and career development."
       ],
       "lnd_source_urls": [
-        "https://intellectenglish.com.au/opportunity/job/sales-executive-chicago-at-pythian-chicago-il-R05SZzlqaDFkcVdQKzRDaWtyQ3pTRFVBN2c9PQ=="
+        "https://builtin.com/articles/companies-that-offer-tuition-reimbursement"
       ],
       "benefits_summary": null,
       "sources": [
-        "serpapi_google"
+        "ddg_search"
       ],
       "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:06.680701",
-      "normalized_name": "pythian"
+      "last_updated": "2026-03-31T21:37:06.145834",
+      "normalized_name": "offer tuition reimbursement"
     },
     "contacts": [
       {
-        "company_name": "Pythian",
-        "company_domain": "pythias.org",
-        "first_name": "Lindsay",
-        "last_name": "Dubin",
-        "full_name": "Lindsay Dubin",
+        "company_name": "Offer Tuition Reimbursement",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Karen",
+        "last_name": "Kopka, M.S., SHRM",
+        "full_name": "Karen Kopka, M.S., SHRM",
         "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/lindsay-dubin-2a745411",
+        "email": "karen.kopka@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/karenkopka",
         "phone": null,
-        "source": "google_search"
+        "source": "google_search+guess"
       },
       {
-        "company_name": "Pythian",
-        "company_domain": "pythias.org",
-        "first_name": "Cesar",
-        "last_name": "Sanchez",
-        "full_name": "Cesar Sanchez",
+        "company_name": "Offer Tuition Reimbursement",
+        "company_domain": "builtinchicago.org",
+        "first_name": "David",
+        "last_name": "Brockmann",
+        "full_name": "David Brockmann",
         "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/cesanchez",
+        "email": "david.brockmann@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/davidbrockmann",
         "phone": null,
-        "source": "google_search"
+        "source": "google_search+guess"
       },
       {
-        "company_name": "Pythian",
-        "company_domain": "pythias.org",
-        "first_name": "R.",
-        "last_name": "Brooks Borcherding",
-        "full_name": "R. Brooks Borcherding",
+        "company_name": "Offer Tuition Reimbursement",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Christy",
+        "last_name": "Schultz",
+        "full_name": "Christy Schultz",
         "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/borcherding",
+        "email": "christy.schultz@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/christy-schultz1",
         "phone": null,
-        "source": "google_search"
+        "source": "google_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Trinity Health",
+      "domain": "trinity-health.org",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Employment Type: Full time Shift: Description: Great opportunity for a Community Health Worker to work in an organization that focuses on treating ..."
+      ],
+      "lnd_source_urls": [
+        "https://jobs.vpppa.org/jobs/187228680-community-health-worker"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:06.145876",
+      "normalized_name": "trinity health"
+    },
+    "contacts": [
+      {
+        "company_name": "Trinity Health",
+        "company_domain": "trinity-health.org",
+        "first_name": "Alicia",
+        "last_name": "Freeman, SPHR, SHRM",
+        "full_name": "Alicia Freeman, SPHR, SHRM",
+        "title": "SCP",
+        "email": "alicia.freeman@trinity-health.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/alicia-freeman-sphr-shrm-scp-98a788144",
+        "phone": null,
+        "source": "ddg_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Foundation ...Training Hub For Nonprofits",
+      "domain": "myforefront.org",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "This year we have had the pleasure of helping literally thousands of wonderfulnonprofitprofessionalsconnect. It is gives us great satisfaction helping so many important causes find the leaders they ne"
+      ],
+      "lnd_source_urls": [
+        "https://www.foundationlist.org/chicago-nonprofit-jobs/"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:17.166509",
+      "normalized_name": "foundation training hub for nonprofits"
+    },
+    "contacts": [
+      {
+        "company_name": "Foundation ...Training Hub For Nonprofits",
+        "company_domain": "myforefront.org",
+        "first_name": "Susan",
+        "last_name": "Riehl",
+        "full_name": "Susan Riehl",
+        "title": null,
+        "email": "susan.riehl@myforefront.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/susan-riehl-4065662b",
+        "phone": null,
+        "source": "google_search+guess"
+      },
+      {
+        "company_name": "Foundation ...Training Hub For Nonprofits",
+        "company_domain": "myforefront.org",
+        "first_name": "Antonio",
+        "last_name": "L. Cortes Ph.D.",
+        "full_name": "Antonio L. Cortes Ph.D.",
+        "title": null,
+        "email": "ap@myforefront.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/antonio-l-cortes-ph-d-73a88413",
+        "phone": null,
+        "source": "google_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Abn Amro Clearing Usa Llc",
+      "domain": "abnamro.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)",
+        "Currently, I am enrolled in a graduate program inChicagopursuing an MBA and taking advantage of the firm\u2019s generoustuitionreimbursementprogram. In addition totuitionreimbursement, employees can utiliz"
+      ],
+      "lnd_source_urls": [
+        "https://builtin.com/company/abn-amro-clearing-usa-llc/faq/innovation-technology-agility",
+        "https://builtin.com/company/abn-amro-clearing-usa-llc"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search",
+        "builtin_chicago"
+      ],
+      "confidence_score": 0.8,
+      "last_updated": "2026-03-31T21:37:19.928971",
+      "normalized_name": "abn amro clearing usa"
+    },
+    "contacts": [
+      {
+        "company_name": "Abn Amro Clearing Usa Llc",
+        "company_domain": "abnamro.com",
+        "first_name": "Ashley",
+        "last_name": "R.",
+        "full_name": "Ashley R.",
+        "title": "",
+        "email": "ashley.r.@abnamro.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/ashley-reiner-hr",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Abn Amro Clearing Usa Llc",
+        "company_domain": "abnamro.com",
+        "first_name": "Jo",
+        "last_name": "Lutow",
+        "full_name": "Jo Lutow",
+        "title": "",
+        "email": "jo.lutow@abnamro.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/jolutow",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Abn Amro Clearing Usa Llc",
+        "company_domain": "abnamro.com",
+        "first_name": "Beth",
+        "last_name": "Boeke",
+        "full_name": "Beth Boeke",
+        "title": "",
+        "email": "beth.boeke@abnamro.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/bethboeke",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Abn Amro Clearing Usa Llc",
+        "company_domain": "abnamro.com",
+        "first_name": "Anthony",
+        "last_name": "Lazzarini",
+        "full_name": "Anthony Lazzarini",
+        "title": "",
+        "email": "anthony.lazzarini@abnamro.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/anthony-lazzarini",
+        "phone": null,
+        "source": "ddg_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Startups...",
+      "domain": "builtinchicago.org",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Alearninganddevelopmentstipendis a compensation incentive that helps employees learn and grow professionally."
+      ],
+      "lnd_source_urls": [
+        "https://www.growthmentor.com/blog/learning-development-stipend-perks/"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:26.931707",
+      "normalized_name": "startups"
+    },
+    "contacts": [
+      {
+        "company_name": "Startups...",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Sharon",
+        "last_name": "Otto, M.Ed.",
+        "full_name": "Sharon Otto, M.Ed.",
+        "title": "Purpose",
+        "email": "sharon.otto@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/sharon-otto-m-ed-b209316",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Startups...",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Pamela",
+        "last_name": "Nicolas",
+        "full_name": "Pamela Nicolas",
+        "title": "Director, HRIS",
+        "email": "pamela.nicolas@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/pamela-nicolas-826bbb",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Startups...",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Marilyn",
+        "last_name": "Lutz",
+        "full_name": "Marilyn Lutz",
+        "title": "",
+        "email": "marilyn.lutz@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/marilynlutz",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Startups...",
+        "company_domain": "builtinchicago.org",
+        "first_name": "Abhishek",
+        "last_name": "Ojha",
+        "full_name": "Abhishek Ojha",
+        "title": "",
+        "email": "abhishek.ojha@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://in.linkedin.com/in/abhishek-ojha-78578016b",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Startups...",
+        "company_domain": "builtinchicago.org",
+        "first_name": "V.P.",
+        "last_name": "Anand",
+        "full_name": "V.P. Anand",
+        "title": "",
+        "email": "v.p..anand@builtinchicago.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://in.linkedin.com/in/v-p-anand-9128075",
+        "phone": null,
+        "source": "ddg_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "LMIHome Page",
+      "domain": "huduser.gov",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Don't let finances get in the way of pursuing youreducation. Apply forEducationMatters Scholarship and you could be awarded $5,000 towards yourtuition.education.nyap.org ... Loading\u2026Aug 28, 2025 \u00b7Educ"
+      ],
+      "lnd_source_urls": [
+        "https://www.unigo.com/scholarships/our-scholarships/education-matters-scholarship"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:34.324315",
+      "normalized_name": "lmihome page"
+    },
+    "contacts": []
+  },
+  {
+    "company": {
+      "name": "Circa",
+      "domain": "circajewels.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "You are a skilled trainer with professional experience leadingandfacilitatinglearninganddevelopmentprograms, as well as having extensive ..."
+      ],
+      "lnd_source_urls": [
+        "https://startup.jobs/global-ai-learning-development-director-circa-ipg-dxtra-5573649"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:44.946493",
+      "normalized_name": "circa"
+    },
+    "contacts": []
+  },
+  {
+    "company": {
+      "name": "CodeHS",
+      "domain": "codehs.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "We provide curriculum,professionaldevelopment, and a full software platform. ... CodeHS is looking for a SalesDevelopmentRepresentative (SDR) to ..."
+      ],
+      "lnd_source_urls": [
+        "https://www.acareers.net/job/sales-development-representative-52"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:37:48.089938",
+      "normalized_name": "codehs"
+    },
+    "contacts": [
+      {
+        "company_name": "CodeHS",
+        "company_domain": "codehs.com",
+        "first_name": "Jonah",
+        "last_name": "Blazek",
+        "full_name": "Jonah Blazek",
+        "title": null,
+        "email": "jonah.blazek@codehs.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/jonah-blazek-a287b8277",
+        "phone": null,
+        "source": "google_search+guess"
+      },
+      {
+        "company_name": "CodeHS",
+        "company_domain": "codehs.com",
+        "first_name": "Michelle",
+        "last_name": "Wolf",
+        "full_name": "Michelle Wolf",
+        "title": null,
+        "email": "michelle.wolf@codehs.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/michelle-wolf-244214b7",
+        "phone": null,
+        "source": "google_search+guess"
+      },
+      {
+        "company_name": "CodeHS",
+        "company_domain": "codehs.com",
+        "first_name": "David",
+        "last_name": "Kleinhans",
+        "full_name": "David Kleinhans",
+        "title": null,
+        "email": "david.kleinhans@codehs.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/david-kleinhans",
+        "phone": null,
+        "source": "google_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Offer a ContinuingEducationStipend...",
+      "domain": "builtinchicago.org",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Check out this list of the topCompaniesThat Offer a ContinuingEducationStipend. Seecompanybenefits, info, interviews and more at Built In.Chicago, Illinois, USA. 142 Employees."
+      ],
+      "lnd_source_urls": [
+        "https://builtin.com/companies/perks/continuing-education-stipend"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:38:16.113691",
+      "normalized_name": "offer a continuingeducationstipend"
+    },
+    "contacts": []
+  },
+  {
+    "company": {
+      "name": "Transunion",
+      "domain": "transunion.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Stagnant Compensation: Salaryreviewsare infrequent, and annual increases often lag behind inflationorcurrent market rates."
+      ],
+      "lnd_source_urls": [
+        "https://www.glassdoor.com/Reviews/TransUnion-Reviews-E11441.htm"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:38:19.772117",
+      "normalized_name": "transunion"
+    },
+    "contacts": [
+      {
+        "company_name": "Transunion",
+        "company_domain": "transunion.com",
+        "first_name": "Chandralekha",
+        "last_name": "Julian",
+        "full_name": "Chandralekha Julian",
+        "title": "",
+        "email": "chandralekha.julian@transunion.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://in.linkedin.com/in/chandralekha-julian-81069329",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Transunion",
+        "company_domain": "transunion.com",
+        "first_name": "Thompson",
+        "last_name": "A",
+        "full_name": "Thompson A",
+        "title": "HRRepresentative",
+        "email": "thompson.a@transunion.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/thompson-a-7b601310",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Transunion",
+        "company_domain": "transunion.com",
+        "first_name": "Aaron",
+        "last_name": "Leigh",
+        "full_name": "Aaron Leigh",
+        "title": "HRTeam Leader",
+        "email": "aaron.leigh@transunion.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://uk.linkedin.com/in/aaron-leigh-855a6857",
+        "phone": null,
+        "source": "ddg_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Blackrock",
+      "domain": "blackrock.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "BlackRock has an employee rating of 3.8 out of 5 stars, based on 6,314 companyreviewson Glassdoor which indicates that most employees have a good ..."
+      ],
+      "lnd_source_urls": [
+        "https://www.glassdoor.com/Reviews/BlackRock-Reviews-E9331.htm"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:38:19.772185",
+      "normalized_name": "blackrock"
+    },
+    "contacts": [
+      {
+        "company_name": "Blackrock",
+        "company_domain": "blackrock.com",
+        "first_name": "Tamera",
+        "last_name": "Johnson, MHR, PHR",
+        "full_name": "Tamera Johnson, MHR, PHR",
+        "title": "",
+        "email": "tamera.johnson@blackrock.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/tamera-johnson-mhr-phr",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Blackrock",
+        "company_domain": "blackrock.com",
+        "first_name": "Martin",
+        "last_name": "Sales",
+        "full_name": "Martin Sales",
+        "title": "",
+        "email": "martin.sales@blackrock.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/martin-sales-002b781b",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Blackrock",
+        "company_domain": "blackrock.com",
+        "first_name": "Annie",
+        "last_name": "Gartland",
+        "full_name": "Annie Gartland",
+        "title": "HR",
+        "email": "annie.gartland@blackrock.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/annie-gartland-b7b0376",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Blackrock",
+        "company_domain": "blackrock.com",
+        "first_name": "Eeleen",
+        "last_name": "Heng",
+        "full_name": "Eeleen Heng",
+        "title": "",
+        "email": "eeleen.heng@blackrock.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://sg.linkedin.com/in/eeleen-heng-6a854029",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Blackrock",
+        "company_domain": "blackrock.com",
+        "first_name": "Tijana",
+        "last_name": "Tosic Doderovic",
+        "full_name": "Tijana Tosic Doderovic",
+        "title": "Solution Engineer Manager",
+        "email": "tijana.doderovic@blackrock.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://rs.linkedin.com/in/tijana-tosic-doderovic-07a428a1",
+        "phone": null,
+        "source": "ddg_search+guess"
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Cb2",
+      "domain": "cb2.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "CB2 has an employee rating of 2.1 out of 5 stars, based on 245 companyreviewson Glassdoor which indicates that most employees have an average ..."
+      ],
+      "lnd_source_urls": [
+        "https://www.glassdoor.com/Reviews/CB2-Reviews-E1444408.htm"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "ddg_search"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:38:19.772217",
+      "normalized_name": "cb2"
+    },
+    "contacts": [
+      {
+        "company_name": "Cb2",
+        "company_domain": "cb2.com",
+        "first_name": "Cathy",
+        "last_name": "Rothenberger",
+        "full_name": "Cathy Rothenberger",
+        "title": "",
+        "email": "cathy.rothenberger@cb2.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/cathy-rothenberger",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Cb2",
+        "company_domain": "cb2.com",
+        "first_name": "Kelli",
+        "last_name": "McNulty",
+        "full_name": "Kelli McNulty",
+        "title": "",
+        "email": "kelli.mcnulty@cb2.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/kellimcnulty",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Cb2",
+        "company_domain": "cb2.com",
+        "first_name": "Tracey",
+        "last_name": "Dreighton",
+        "full_name": "Tracey Dreighton",
+        "title": "",
+        "email": "tracey.dreighton@cb2.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/tdreighton",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Cb2",
+        "company_domain": "cb2.com",
+        "first_name": "Daniel",
+        "last_name": "R.",
+        "full_name": "Daniel R.",
+        "title": "",
+        "email": "daniel.r.@cb2.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/danram2",
+        "phone": null,
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Cb2",
+        "company_domain": "cb2.com",
+        "first_name": "Sharelle",
+        "last_name": "Young",
+        "full_name": "Sharelle Young",
+        "title": "",
+        "email": "sharelle.young@cb2.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/sharelle-young-91447492",
+        "phone": null,
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -126,35 +789,20 @@
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Professional Development. Continuing education stipend. Job training ... Tuition reimbursement. Health Insurance + Wellness. Dental insurance. Disability ...",
-        "Continuing education stipend Job training & conferences Mentorship program \u00b7 +5 \u00b7 Health Insurance + Wellness \u00b7 Dental insurance Disability ..."
+        "Professional Development. Continuing education stipend. Job training ... Tuition reimbursement. Health Insurance + Wellness. Dental insurance. Disability ..."
       ],
       "lnd_source_urls": [
-        "https://builtin.com/company/federal-reserve-bank-chicago/benefits",
-        "https://builtin.com/company/federal-reserve-bank-chicago"
+        "https://builtin.com/company/federal-reserve-bank-chicago/benefits"
       ],
       "benefits_summary": null,
       "sources": [
         "serpapi_google"
       ],
       "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:07.816318",
+      "last_updated": "2026-03-31T21:38:53.203834",
       "normalized_name": "federal reserve bank chicago"
     },
     "contacts": [
-      {
-        "company_name": "Federal Reserve Bank Chicago",
-        "company_domain": "chicagofed.org",
-        "first_name": "Jon",
-        "last_name": "Sudduth",
-        "full_name": "Jon Sudduth",
-        "title": "Retired",
-        "email": "jon.sudduth@chicagofed.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/jon-sudduth-a947a25",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
       {
         "company_name": "Federal Reserve Bank Chicago",
         "company_domain": "chicagofed.org",
@@ -163,155 +811,118 @@
         "full_name": "Jim Hamilton",
         "title": null,
         "email": "jim.hamilton@chicagofed.org",
-        "email_confidence": 0.8,
+        "email_confidence": 0.6,
         "linkedin_url": "https://www.linkedin.com/in/jhamiltonitrecruiter",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "google_search+guess"
       },
       {
         "company_name": "Federal Reserve Bank Chicago",
         "company_domain": "chicagofed.org",
-        "first_name": "Nameeta",
-        "last_name": "Mehta",
-        "full_name": "Nameeta Mehta",
-        "title": null,
-        "email": "nameeta.mehta@chicagofed.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/nameeta-mehta-705b6618",
+        "first_name": "Jon",
+        "last_name": "Sudduth",
+        "full_name": "Jon Sudduth",
+        "title": "Retired",
+        "email": "jon.sudduth@chicagofed.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/jon-sudduth-a947a25",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "google_search+guess"
+      },
+      {
+        "company_name": "Federal Reserve Bank Chicago",
+        "company_domain": "chicagofed.org",
+        "first_name": "Janice",
+        "last_name": "Dao",
+        "full_name": "Janice Dao",
+        "title": null,
+        "email": "janice.dao@chicagofed.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/janicedao",
+        "phone": null,
+        "source": "google_search+guess"
       }
     ]
   },
   {
     "company": {
-      "name": "Imc Trading",
-      "domain": "imc.com",
+      "name": "Supernova Technology",
+      "domain": "supernovacompanies.com",
       "industry": null,
       "employee_count": null,
       "headquarters_city": "Chicago",
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Professional Development. Continuing education stipend. Customized development ... Tuition reimbursement. Personal development training. Virtual coaching ..."
+        "Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)",
+        "Professional Development. Continuing education stipend. Job training ... Tuition reimbursement. Personal development training. Diversity. Dedicated ..."
       ],
       "lnd_source_urls": [
-        "https://builtin.com/company/imc-trading/benefits"
+        "https://builtin.com/company/supernova-technology",
+        "https://builtin.com/company/supernova-technology/benefits"
       ],
       "benefits_summary": null,
       "sources": [
-        "serpapi_google"
+        "serpapi_google",
+        "builtin_chicago"
       ],
-      "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:07.816331",
-      "normalized_name": "imc trading"
+      "confidence_score": 0.8,
+      "last_updated": "2026-03-31T21:38:53.203861",
+      "normalized_name": "supernova"
     },
     "contacts": [
       {
-        "company_name": "Imc Trading",
-        "company_domain": "imc.com",
-        "first_name": "Ashley",
-        "last_name": "Scott",
-        "full_name": "Ashley Scott",
-        "title": null,
-        "email": "ashley.scott@imc.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/ashleyscott",
+        "company_name": "Supernova Technology",
+        "company_domain": "supernovacompanies.com",
+        "first_name": "Christopher",
+        "last_name": "Yang",
+        "full_name": "Christopher Yang",
+        "title": "",
+        "email": "christopheryang@supernovacompanies.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/christopher-yang-3a8631186",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
       },
       {
-        "company_name": "Imc Trading",
-        "company_domain": "imc.com",
-        "first_name": "Katie",
-        "last_name": "Allanson",
-        "full_name": "Katie Allanson",
-        "title": null,
-        "email": "katie.allanson@imc.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/katie-allanson-2a970814",
+        "company_name": "Supernova Technology",
+        "company_domain": "supernovacompanies.com",
+        "first_name": "Daniella",
+        "last_name": "Kaplivsky",
+        "full_name": "Daniella Kaplivsky",
+        "title": "TalentAcquisition Manager",
+        "email": "daniellakaplivsky@supernovacompanies.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://ca.linkedin.com/in/daniella-kaplivsky-680815131",
         "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "Imc Trading",
-        "company_domain": "imc.com",
-        "first_name": "Richard",
-        "last_name": "Sponder",
-        "full_name": "Richard Sponder",
-        "title": null,
-        "email": "richard.sponder@imc.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/richard-sponder-59294164",
-        "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
       }
     ]
   },
   {
     "company": {
-      "name": "Alliant Credit Union",
-      "domain": "alliantcreditunion.org",
+      "name": "Oppfi",
+      "domain": "oppfi.com",
       "industry": null,
       "employee_count": null,
       "headquarters_city": "Chicago",
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Continuing education stipend. We offer up to $5,250 annually for continuing education through our tuition reimbursement benefit. Job training & conferences."
+        "Other benefits include medical, dental, and vision coverage, and tuition reimbursement. ... Employees have the option to work from home within the U.S. or in the ..."
       ],
       "lnd_source_urls": [
-        "https://builtin.com/company/alliant-credit-union/benefits"
+        "https://builtin.com/company/oppfi/benefits"
       ],
       "benefits_summary": null,
       "sources": [
         "serpapi_google"
       ],
       "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:07.816349",
-      "normalized_name": "alliant credit union"
+      "last_updated": "2026-03-31T21:38:53.203868",
+      "normalized_name": "oppfi"
     },
-    "contacts": [
-      {
-        "company_name": "Alliant Credit Union",
-        "company_domain": "alliantcreditunion.org",
-        "first_name": "Diane",
-        "last_name": "Hughes",
-        "full_name": "Diane Hughes",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/dianevhughes",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Alliant Credit Union",
-        "company_domain": "alliantcreditunion.org",
-        "first_name": "Rosanne",
-        "last_name": "Hoogenboom, PHR",
-        "full_name": "Rosanne Hoogenboom, PHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rosanne-hoogenboom-phr-0a971616",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Alliant Credit Union",
-        "company_domain": "alliantcreditunion.org",
-        "first_name": "Donna",
-        "last_name": "Robinson",
-        "full_name": "Donna Robinson",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/donnarrobinson",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -333,50 +944,88 @@
         "serpapi_google"
       ],
       "confidence_score": 0.6,
-      "last_updated": "2026-03-31T20:50:10.366374",
+      "last_updated": "2026-03-31T21:39:08.374686",
       "normalized_name": "tandem"
     },
     "contacts": [
       {
         "company_name": "Tandem",
         "company_domain": "thetandemco.com",
-        "first_name": "Jamin",
-        "last_name": "Rothschild",
-        "full_name": "Jamin Rothschild",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/jamin-rothschild-9a686025",
+        "first_name": "Mona",
+        "last_name": "S.",
+        "full_name": "Mona S.",
+        "title": "",
+        "email": "mona.s.@thetandemco.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/mona-singh1",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       },
       {
         "company_name": "Tandem",
         "company_domain": "thetandemco.com",
-        "first_name": "Jay",
-        "last_name": "Bellich",
-        "full_name": "Jay Bellich",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/jay-bellich-3236474b",
+        "first_name": "Kim",
+        "last_name": "Heinberg",
+        "full_name": "Kim Heinberg",
+        "title": "Benefits Assistant",
+        "email": "kim.heinberg@thetandemco.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/kim-heinberg-a3713b11",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       },
       {
         "company_name": "Tandem",
         "company_domain": "thetandemco.com",
-        "first_name": "Elizabeth",
-        "last_name": "(Ellie) Ankeny",
-        "full_name": "Elizabeth (Ellie) Ankeny",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/elizabeth-ellie-ankeny-b004916",
+        "first_name": "Murali",
+        "last_name": "Iyer Radhakrishnan",
+        "full_name": "Murali Iyer Radhakrishnan",
+        "title": "Director",
+        "email": "murali.radhakrishnan@thetandemco.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://ae.linkedin.com/in/murali-iyer-radhakrishnan-a8609831",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "Tandem",
+        "company_domain": "thetandemco.com",
+        "first_name": "Phil",
+        "last_name": "Willcox",
+        "full_name": "Phil Willcox",
+        "title": "",
+        "email": "phil.willcox@thetandemco.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://uk.linkedin.com/in/phil-willcox-02013425",
+        "phone": null,
+        "source": "ddg_search+guess"
       }
     ]
+  },
+  {
+    "company": {
+      "name": "CJBS Accounting Firm",
+      "domain": "cjbs.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Professional development. At CJBS, you'll receive the encouragement \u2014 and structure \u2014 you need to reach your goals. In addition to working one on one with ..."
+      ],
+      "lnd_source_urls": [
+        "https://cjbs.com/careers/"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "serpapi_google"
+      ],
+      "confidence_score": 0.6,
+      "last_updated": "2026-03-31T21:39:18.127779",
+      "normalized_name": "cjbs accounting firm"
+    },
+    "contacts": []
   },
   {
     "company": {
@@ -396,54 +1045,14 @@
         "serpapi_jobs"
       ],
       "confidence_score": 0.7,
-      "last_updated": "2026-03-31T20:50:14.756803",
+      "last_updated": "2026-03-31T21:39:25.206224",
       "normalized_name": "norwegian american hospital"
     },
-    "contacts": [
-      {
-        "company_name": "Norwegian American Hospital",
-        "company_domain": "hph.care",
-        "first_name": "Karen",
-        "last_name": "Marino",
-        "full_name": "Karen Marino",
-        "title": null,
-        "email": "kmarino@hph.care",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/karensmarino",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "Norwegian American Hospital",
-        "company_domain": "hph.care",
-        "first_name": "Michele",
-        "last_name": "Pasqua",
-        "full_name": "Michele Pasqua",
-        "title": null,
-        "email": "mpasqua@hph.care",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/michele-pasqua-a4631120",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "Norwegian American Hospital",
-        "company_domain": "hph.care",
-        "first_name": "Geanna",
-        "last_name": "Boykin, PHR",
-        "full_name": "Geanna Boykin, PHR",
-        "title": null,
-        "email": "gboykin@hph.care",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/geannaboykin",
-        "phone": null,
-        "source": "google_search+hunter"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
-      "name": "Legacy Healthcare LLC",
+      "name": "Troy Center",
       "domain": "cms.gov",
       "industry": null,
       "employee_count": null,
@@ -451,7 +1060,7 @@
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Job posting: Compassionate LPN - Growth, Daily Pay, Tuition Reimb"
+        "Job posting: LPN \u2014 Flexible Shifts, $5k Sign-On + Tuition Reimbursement"
       ],
       "lnd_source_urls": [],
       "benefits_summary": null,
@@ -459,50 +1068,33 @@
         "serpapi_jobs"
       ],
       "confidence_score": 0.7,
-      "last_updated": "2026-03-31T20:50:14.756858",
-      "normalized_name": "legacy healthcare"
+      "last_updated": "2026-03-31T21:39:25.206243",
+      "normalized_name": "troy center"
     },
-    "contacts": [
-      {
-        "company_name": "Legacy Healthcare LLC",
-        "company_domain": "cms.gov",
-        "first_name": "Angelic",
-        "last_name": "P.",
-        "full_name": "Angelic P.",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/angelic-p-35a2b4122",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Legacy Healthcare LLC",
-        "company_domain": "cms.gov",
-        "first_name": "Michael",
-        "last_name": "Rongo",
-        "full_name": "Michael Rongo",
-        "title": null,
-        "email": "michael.rongo@cms.gov",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/michael-rongo-323b56233",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "Legacy Healthcare LLC",
-        "company_domain": "cms.gov",
-        "first_name": "Ronald",
-        "last_name": "Joseph Rentoy",
-        "full_name": "Ronald Joseph Rentoy",
-        "title": null,
-        "email": "ronald.joseph-rentoy@cms.gov",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/ronald-joseph-rentoy-bb4495165",
-        "phone": null,
-        "source": "google_search+hunter"
-      }
-    ]
+    "contacts": []
+  },
+  {
+    "company": {
+      "name": "UChicago Medicine",
+      "domain": "uchicagomedicine.org",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Job posting: PICU Staff Nurse (RN) Day Shift, BSN Tuition Reimbursement at UChicago Medicine Chicago, IL"
+      ],
+      "lnd_source_urls": [],
+      "benefits_summary": null,
+      "sources": [
+        "serpapi_jobs"
+      ],
+      "confidence_score": 0.7,
+      "last_updated": "2026-03-31T21:39:25.206275",
+      "normalized_name": "uchicago medicine"
+    },
+    "contacts": []
   },
   {
     "company": {
@@ -522,115 +1114,127 @@
         "serpapi_jobs"
       ],
       "confidence_score": 0.7,
-      "last_updated": "2026-03-31T20:50:17.174843",
+      "last_updated": "2026-03-31T21:39:29.078450",
       "normalized_name": "year up united"
     },
     "contacts": [
       {
         "company_name": "Year Up United",
         "company_domain": "yearup.org",
-        "first_name": "Andrea",
-        "last_name": "Vaughn",
-        "full_name": "Andrea Vaughn",
-        "title": null,
-        "email": "avaughn@yearup.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/andreavaughn1",
+        "first_name": "Margaret",
+        "last_name": "R.",
+        "full_name": "Margaret R.",
+        "title": "SeniorDirector,LearningExcellence",
+        "email": "margaret.r.@yearup.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/mrizzony",
         "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "Year Up United",
-        "company_domain": "yearup.org",
-        "first_name": "Yvette",
-        "last_name": "Vargas",
-        "full_name": "Yvette Vargas",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/vargasyvette",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Year Up United",
-        "company_domain": "yearup.org",
-        "first_name": "Heidi",
-        "last_name": "Dolan",
-        "full_name": "Heidi Dolan",
-        "title": null,
-        "email": "hdolan@yearup.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/heidi-dolan-191343118",
-        "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
       }
     ]
   },
   {
     "company": {
-      "name": "TCS Education",
-      "domain": "tcsedsystem.edu",
+      "name": "City Year",
+      "domain": "cityyear.org",
       "industry": null,
       "employee_count": null,
       "headquarters_city": "Chicago",
       "address": null,
       "has_lnd_budget": true,
       "lnd_evidence": [
-        "Glassdoor: ... TCS Education reviews in Chicago IL. A free inside ... \" \"Great people\" \"Professional development trainings and a overall great working environment."
+        "Glassdoor: - Good to do if you're debating a career in education -Scholarship money (Segal Education Award) -Professional Development ... stipend' this is important to ..."
       ],
       "lnd_source_urls": [
-        "https://www.glassdoor.com/Reviews/TCS-Education-Chicago-IL-Reviews-EI_IE374975.0,13_IL.14,24_IC1128808.htm"
+        "https://www.glassdoor.com/Reviews/City-Year-Chicago-IL-Reviews-EI_IE147224.0,9_IL.10,20_IC1128808.htm"
       ],
       "benefits_summary": null,
       "sources": [
         "glassdoor"
       ],
       "confidence_score": 0.65,
-      "last_updated": "2026-03-31T20:50:19.767280",
-      "normalized_name": "tcs education"
+      "last_updated": "2026-03-31T21:39:34.097544",
+      "normalized_name": "city year"
     },
     "contacts": [
       {
-        "company_name": "TCS Education",
-        "company_domain": "tcsedsystem.edu",
-        "first_name": "Chelsie",
-        "last_name": "Petrowske",
-        "full_name": "Chelsie Petrowske",
-        "title": null,
-        "email": "cpetrowske@tcsedsystem.edu",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/chelsie-petrowske-25201a11",
+        "company_name": "City Year",
+        "company_domain": "cityyear.org",
+        "first_name": "Blake",
+        "last_name": "Barber",
+        "full_name": "Blake Barber",
+        "title": "",
+        "email": "blake.barber@cityyear.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/blake-barber-mem",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
       },
       {
-        "company_name": "TCS Education",
-        "company_domain": "tcsedsystem.edu",
-        "first_name": "Laura",
-        "last_name": "Puente",
-        "full_name": "Laura Puente",
-        "title": null,
-        "email": "lpuente@tcsedsystem.edu",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/lpuentend",
+        "company_name": "City Year",
+        "company_domain": "cityyear.org",
+        "first_name": "Lauren",
+        "last_name": "Enneking",
+        "full_name": "Lauren Enneking",
+        "title": "Recruiter",
+        "email": "lauren.enneking@cityyear.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/lauren-enneking-385726193",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
       },
       {
-        "company_name": "TCS Education",
-        "company_domain": "tcsedsystem.edu",
-        "first_name": "Shauntia",
-        "last_name": "McNair",
-        "full_name": "Shauntia McNair",
-        "title": null,
-        "email": "smcnair@tcsedsystem.edu",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/shauntia-mcnair",
+        "company_name": "City Year",
+        "company_domain": "cityyear.org",
+        "first_name": "Barbara",
+        "last_name": "Kimmel",
+        "full_name": "Barbara Kimmel",
+        "title": "",
+        "email": "barbara.kimmel@cityyear.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/barbara-kimmel-654587a",
         "phone": null,
-        "source": "google_search+hunter"
+        "source": "ddg_search+guess"
+      },
+      {
+        "company_name": "City Year",
+        "company_domain": "cityyear.org",
+        "first_name": "Barbara",
+        "last_name": "Noonan",
+        "full_name": "Barbara Noonan",
+        "title": "",
+        "email": "barbara.noonan@cityyear.org",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/barbara-noonan-ba509511",
+        "phone": null,
+        "source": "ddg_search+guess"
       }
     ]
+  },
+  {
+    "company": {
+      "name": "Nasdaq",
+      "domain": "nasdaq.com",
+      "industry": null,
+      "employee_count": null,
+      "headquarters_city": "Chicago",
+      "address": null,
+      "has_lnd_budget": true,
+      "lnd_evidence": [
+        "Glassdoor: Current employee. Chicago, IL. Recommend. CEO ... Chicago or explore more of the top rated companies in Chicago. ... training budget and managers who speak to ..."
+      ],
+      "lnd_source_urls": [
+        "https://www.glassdoor.com/Reviews/Nasdaq-Chicago-Reviews-EI_IE12152.0,6_IL.7,14_IC1128808.htm"
+      ],
+      "benefits_summary": null,
+      "sources": [
+        "glassdoor"
+      ],
+      "confidence_score": 0.65,
+      "last_updated": "2026-03-31T21:39:35.793810",
+      "normalized_name": "nasdaq"
+    },
+    "contacts": []
   },
   {
     "company": {
@@ -652,115 +1256,10 @@
         "glassdoor"
       ],
       "confidence_score": 0.65,
-      "last_updated": "2026-03-31T20:50:20.835213",
+      "last_updated": "2026-03-31T21:39:35.793866",
       "normalized_name": "hka"
     },
-    "contacts": [
-      {
-        "company_name": "HKA",
-        "company_domain": "hka.com",
-        "first_name": "Steven",
-        "last_name": "Coleman",
-        "full_name": "Steven Coleman",
-        "title": null,
-        "email": "stevencoleman@hka.com",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/steven-g-coleman",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "HKA",
-        "company_domain": "hka.com",
-        "first_name": "Kelsey",
-        "last_name": "Carey",
-        "full_name": "Kelsey Carey",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kelseycarey1",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "HKA",
-        "company_domain": "hka.com",
-        "first_name": "Catherine",
-        "last_name": "Evans",
-        "full_name": "Catherine Evans",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/catherine-evans-926b5696",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
-  },
-  {
-    "company": {
-      "name": "The Chicago Public Education Fund",
-      "domain": "thefundchicago.org",
-      "industry": null,
-      "employee_count": null,
-      "headquarters_city": "Chicago",
-      "address": null,
-      "has_lnd_budget": true,
-      "lnd_evidence": [
-        "Glassdoor: Career & growth \u2013 While some find opportunities for professional development, the intense workload and unclear role definitions often overwhelm new hires."
-      ],
-      "lnd_source_urls": [
-        "https://www.glassdoor.com/Reviews/The-Chicago-Public-Education-Fund-Reviews-E222667.htm"
-      ],
-      "benefits_summary": null,
-      "sources": [
-        "glassdoor"
-      ],
-      "confidence_score": 0.65,
-      "last_updated": "2026-03-31T20:50:23.386703",
-      "normalized_name": "the chicago public education fund"
-    },
-    "contacts": [
-      {
-        "company_name": "The Chicago Public Education Fund",
-        "company_domain": "thefundchicago.org",
-        "first_name": "Heather",
-        "last_name": "Y. Anichini",
-        "full_name": "Heather Y. Anichini",
-        "title": null,
-        "email": "hanichini@thefundchicago.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/heatheranichini",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "The Chicago Public Education Fund",
-        "company_domain": "thefundchicago.org",
-        "first_name": "Andrea",
-        "last_name": "Aguilera Villalobos",
-        "full_name": "Andrea Aguilera Villalobos",
-        "title": null,
-        "email": "aaguilera-villalobos@thefundchicago.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/andrea-aguilera-villalobos-a198a9224",
-        "phone": null,
-        "source": "google_search+hunter"
-      },
-      {
-        "company_name": "The Chicago Public Education Fund",
-        "company_domain": "thefundchicago.org",
-        "first_name": "Eytan",
-        "last_name": "Cohen",
-        "full_name": "Eytan Cohen",
-        "title": null,
-        "email": "ecohen@thefundchicago.org",
-        "email_confidence": 0.8,
-        "linkedin_url": "https://www.linkedin.com/in/eytan-cohen",
-        "phone": null,
-        "source": "google_search+hunter"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -782,48 +1281,22 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733730",
+      "last_updated": "2026-03-31T21:39:52.828936",
       "normalized_name": "floqast"
     },
     "contacts": [
       {
         "company_name": "FloQast",
         "company_domain": "floqast.com",
-        "first_name": "Adey",
-        "last_name": "Tadesse",
-        "full_name": "Adey Tadesse",
-        "title": "Heath",
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/adeyth",
+        "first_name": "Juliet",
+        "last_name": "(Jakov) Izbotsky, PHR, PHRca",
+        "full_name": "Juliet (Jakov) Izbotsky, PHR, PHRca",
+        "title": "",
+        "email": "juliet.@floqast.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/julietajakov",
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "FloQast",
-        "company_domain": "floqast.com",
-        "first_name": "Melissa",
-        "last_name": "Powell",
-        "full_name": "Melissa Powell",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/fqmelissapowell",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "FloQast",
-        "company_domain": "floqast.com",
-        "first_name": "Rashad",
-        "last_name": "Mohsin",
-        "full_name": "Rashad Mohsin",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rashadmohsin",
-        "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -847,24 +1320,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733742",
+      "last_updated": "2026-03-31T21:39:52.828944",
       "normalized_name": "tastytrade tastylive tastyfx tastycrypto"
     },
-    "contacts": [
-      {
-        "company_name": "tastytrade/ tastylive/ tastyfx/ tastycrypto",
-        "company_domain": "builtinchicago.org",
-        "first_name": "Shelby",
-        "last_name": "King",
-        "full_name": "Shelby King",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kingshelby",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -886,48 +1345,22 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733749",
+      "last_updated": "2026-03-31T21:39:52.828949",
       "normalized_name": "mondelz"
     },
     "contacts": [
       {
         "company_name": "Mondel\u0113z International",
         "company_domain": "mondelezinternational.com",
-        "first_name": "Stephanie",
-        "last_name": "Lilak",
-        "full_name": "Stephanie Lilak",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/stephanielilak",
+        "first_name": "Hammad",
+        "last_name": "Mozaffar",
+        "full_name": "Hammad Mozaffar",
+        "title": "HR Executive at Mondel\u0113z International ...How do I contact Human Resources at Mondelez International?careers",
+        "email": "hammad.mozaffar@mondelezinternational.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/hammad-mozaffar-449456b",
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Mondel\u0113z International",
-        "company_domain": "mondelezinternational.com",
-        "first_name": "Camila",
-        "last_name": "Cassemiro",
-        "full_name": "Camila Cassemiro",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/camila-cassemiro-5260a610",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Mondel\u0113z International",
-        "company_domain": "mondelezinternational.com",
-        "first_name": "Liz",
-        "last_name": "Myers PHR, CCP",
-        "full_name": "Liz Myers PHR, CCP",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/lizmyers1",
-        "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -951,48 +1384,48 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733753",
+      "last_updated": "2026-03-31T21:39:52.828952",
       "normalized_name": "occ"
     },
     "contacts": [
       {
         "company_name": "OCC",
         "company_domain": "theocc.com",
-        "first_name": "Andre",
-        "last_name": "B.",
-        "full_name": "Andre B.",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/andrebuckles",
+        "first_name": "Misty",
+        "last_name": "Arabie",
+        "full_name": "Misty Arabie",
+        "title": "Human Resources Administrative Specialist",
+        "email": "misty.arabie@theocc.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/misty-arabie-374107218",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       },
       {
         "company_name": "OCC",
         "company_domain": "theocc.com",
-        "first_name": "Zephaniah",
-        "last_name": "Manning M.",
-        "full_name": "Zephaniah Manning M.",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/zephaniahmanning",
+        "first_name": "Laura",
+        "last_name": "O'Donnell",
+        "full_name": "Laura O'Donnell",
+        "title": "",
+        "email": "laura.o'donnell@theocc.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://uk.linkedin.com/in/laura-o-donnell-0b548616a",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       },
       {
         "company_name": "OCC",
         "company_domain": "theocc.com",
-        "first_name": "Kelsey",
-        "last_name": "Clas",
-        "full_name": "Kelsey Clas",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kelsey-clas",
+        "first_name": "Janet",
+        "last_name": "Addison, MScOccPsych",
+        "full_name": "Janet Addison, MScOccPsych",
+        "title": "",
+        "email": "janet.addison@theocc.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://uk.linkedin.com/in/janet-addison-msc-occ-psych-56797111",
         "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -1016,50 +1449,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733757",
+      "last_updated": "2026-03-31T21:39:52.828955",
       "normalized_name": "peak6"
     },
-    "contacts": [
-      {
-        "company_name": "PEAK6",
-        "company_domain": "peak6.com",
-        "first_name": "Amy",
-        "last_name": "Cwalina",
-        "full_name": "Amy Cwalina",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/amycwalina",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "PEAK6",
-        "company_domain": "peak6.com",
-        "first_name": "Amanda",
-        "last_name": "Ernst, SPHR",
-        "full_name": "Amanda Ernst, SPHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/amandaernst",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "PEAK6",
-        "company_domain": "peak6.com",
-        "first_name": "Monika",
-        "last_name": "Lachiewicz",
-        "full_name": "Monika Lachiewicz",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/monika-lachiewicz-8b621955",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1081,48 +1474,22 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733762",
+      "last_updated": "2026-03-31T21:39:52.828958",
       "normalized_name": "avant"
     },
     "contacts": [
       {
         "company_name": "Avant",
         "company_domain": "avant.com",
-        "first_name": "Joel",
-        "last_name": "Reimann",
-        "full_name": "Joel Reimann",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/joelreimann",
+        "first_name": "Avant",
+        "last_name": "Johnson",
+        "full_name": "Avant Johnson",
+        "title": "Deel | LinkedInSign in to your Zoho People account | Zoho People LoginEvolve Talent PartnersDeep End Talent StrategiesHome",
+        "email": "avant.johnson@avant.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/avantjohnson",
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Avant",
-        "company_domain": "avant.com",
-        "first_name": "Allison",
-        "last_name": "Hammond",
-        "full_name": "Allison Hammond",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/allison-hammond-517672ba",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Avant",
-        "company_domain": "avant.com",
-        "first_name": "Matthew",
-        "last_name": "Merrick",
-        "full_name": "Matthew Merrick",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/matthew-merrick-01b0ab1",
-        "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -1146,7 +1513,7 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733767",
+      "last_updated": "2026-03-31T21:39:52.828962",
       "normalized_name": "velocityehs"
     },
     "contacts": [
@@ -1156,38 +1523,12 @@
         "first_name": "Rachel",
         "last_name": "Kaiser",
         "full_name": "Rachel Kaiser",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rachelkaiser",
+        "title": "Rachel Kaiser",
+        "email": "rkaiser@ehs.com",
+        "email_confidence": 0.6,
+        "linkedin_url": null,
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "VelocityEHS",
-        "company_domain": "ehs.com",
-        "first_name": "Lindsay",
-        "last_name": "Steigerwalt, PHR, SHRM",
-        "full_name": "Lindsay Steigerwalt, PHR, SHRM",
-        "title": "CP",
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/lindsay-steigerwalt-phr-shrm-cp-a3330819",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "VelocityEHS",
-        "company_domain": "ehs.com",
-        "first_name": "Rebecca",
-        "last_name": "Olivo, PHR",
-        "full_name": "Rebecca Olivo, PHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rebeccarroberts",
-        "phone": null,
-        "source": "google_search"
+        "source": "website_team+guess"
       }
     ]
   },
@@ -1211,50 +1552,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733771",
+      "last_updated": "2026-03-31T21:39:52.828965",
       "normalized_name": "upside"
     },
-    "contacts": [
-      {
-        "company_name": "Upside",
-        "company_domain": "theupsidechicago.com",
-        "first_name": "Elizabeth",
-        "last_name": "V.",
-        "full_name": "Elizabeth V.",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/evaggelatos",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Upside",
-        "company_domain": "theupsidechicago.com",
-        "first_name": "David",
-        "last_name": "Thomas",
-        "full_name": "David Thomas",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/dcthomas",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Upside",
-        "company_domain": "theupsidechicago.com",
-        "first_name": "Mike",
-        "last_name": "McNamee",
-        "full_name": "Mike McNamee",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/mcnameem",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1276,50 +1577,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733775",
+      "last_updated": "2026-03-31T21:39:52.828968",
       "normalized_name": "cdw"
     },
-    "contacts": [
-      {
-        "company_name": "CDW",
-        "company_domain": "cdw.com",
-        "first_name": "Shannon",
-        "last_name": "Wagner",
-        "full_name": "Shannon Wagner",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/shannonwagner1",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "CDW",
-        "company_domain": "cdw.com",
-        "first_name": "Arlene",
-        "last_name": "Rodriguez",
-        "full_name": "Arlene Rodriguez",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rodriguez-arlene",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "CDW",
-        "company_domain": "cdw.com",
-        "first_name": "Joshua",
-        "last_name": "Smith",
-        "full_name": "Joshua Smith",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/joshcsmithhr",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1341,50 +1602,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733779",
+      "last_updated": "2026-03-31T21:39:52.828971",
       "normalized_name": "coupa"
     },
-    "contacts": [
-      {
-        "company_name": "Coupa",
-        "company_domain": "coupa.com",
-        "first_name": "Audree",
-        "last_name": "Hall",
-        "full_name": "Audree Hall",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/audree-hall",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Coupa",
-        "company_domain": "coupa.com",
-        "first_name": "Laura",
-        "last_name": "Adamec",
-        "full_name": "Laura Adamec",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/laura-adamec-476b6212",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Coupa",
-        "company_domain": "coupa.com",
-        "first_name": "Rashida",
-        "last_name": "Jones",
-        "full_name": "Rashida Jones",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rashidaj",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1406,48 +1627,22 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733783",
+      "last_updated": "2026-03-31T21:39:52.828974",
       "normalized_name": "ninjatrader"
     },
     "contacts": [
       {
         "company_name": "NinjaTrader",
         "company_domain": "ninjatrader.com",
-        "first_name": "Jennifer",
-        "last_name": "Marszalek",
-        "full_name": "Jennifer Marszalek",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/jennifermarszalek",
+        "first_name": "Madisyn",
+        "last_name": "Wiggins",
+        "full_name": "Madisyn Wiggins",
+        "title": "",
+        "email": "madisyn.wiggins@ninjatrader.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/madisyn-wiggins-933510267",
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "NinjaTrader",
-        "company_domain": "ninjatrader.com",
-        "first_name": "Megan",
-        "last_name": "Doherty",
-        "full_name": "Megan Doherty",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/megan-doherty-101bb722",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "NinjaTrader",
-        "company_domain": "ninjatrader.com",
-        "first_name": "Katie",
-        "last_name": "(Cuvala) Miller",
-        "full_name": "Katie (Cuvala) Miller",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kaitlincuvala",
-        "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -1471,115 +1666,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733788",
+      "last_updated": "2026-03-31T21:39:52.828978",
       "normalized_name": "bounteous"
     },
-    "contacts": [
-      {
-        "company_name": "Bounteous",
-        "company_domain": "bounteous.com",
-        "first_name": "John",
-        "last_name": "Lee",
-        "full_name": "John Lee",
-        "title": "Manager",
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/bounteous-john-lee",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Bounteous",
-        "company_domain": "bounteous.com",
-        "first_name": "Ali",
-        "last_name": "Moussa",
-        "full_name": "Ali Moussa",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/ali-moussa",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Bounteous",
-        "company_domain": "bounteous.com",
-        "first_name": "Rachel",
-        "last_name": "Dhaliwal (Kesseler)",
-        "full_name": "Rachel Dhaliwal (Kesseler)",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/rachelkesseler",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
-  },
-  {
-    "company": {
-      "name": "Supernova Technology",
-      "domain": "supernovacompanies.com",
-      "industry": null,
-      "employee_count": null,
-      "headquarters_city": "Chicago",
-      "address": null,
-      "has_lnd_budget": true,
-      "lnd_evidence": [
-        "Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)"
-      ],
-      "lnd_source_urls": [
-        "https://builtin.com/company/supernova-technology"
-      ],
-      "benefits_summary": null,
-      "sources": [
-        "builtin_chicago"
-      ],
-      "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733841",
-      "normalized_name": "supernova"
-    },
-    "contacts": [
-      {
-        "company_name": "Supernova Technology",
-        "company_domain": "supernovacompanies.com",
-        "first_name": "Stephanie",
-        "last_name": "Lyons",
-        "full_name": "Stephanie Lyons",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/smvargo",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Supernova Technology",
-        "company_domain": "supernovacompanies.com",
-        "first_name": "Mary",
-        "last_name": "Gipson",
-        "full_name": "Mary Gipson",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/mary-gipson-23417185",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Supernova Technology",
-        "company_domain": "supernovacompanies.com",
-        "first_name": "Jason",
-        "last_name": "Duhamel",
-        "full_name": "Jason Duhamel",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/jasonduhamel",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1601,48 +1691,22 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733866",
+      "last_updated": "2026-03-31T21:39:52.828983",
       "normalized_name": "tempus ai"
     },
     "contacts": [
       {
         "company_name": "Tempus AI",
         "company_domain": "tempus.com",
-        "first_name": "Lindsey",
-        "last_name": "Sheldon, PHR",
-        "full_name": "Lindsey Sheldon, PHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/lindsey-sheldon-phr-76470046",
+        "first_name": "Maria",
+        "last_name": "Laura Gutierrez",
+        "full_name": "Maria Laura Gutierrez",
+        "title": "",
+        "email": "maria.gutierrez@tempus.com",
+        "email_confidence": 0.6,
+        "linkedin_url": "https://www.linkedin.com/in/maria-laura-gutierrez-769622233",
         "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Tempus AI",
-        "company_domain": "tempus.com",
-        "first_name": "Neil",
-        "last_name": "Kelleher",
-        "full_name": "Neil Kelleher",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/neil-kelleher-98192353",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Tempus AI",
-        "company_domain": "tempus.com",
-        "first_name": "Lauren",
-        "last_name": "Parker",
-        "full_name": "Lauren Parker",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/laurenalparker",
-        "phone": null,
-        "source": "google_search"
+        "source": "ddg_search+guess"
       }
     ]
   },
@@ -1666,50 +1730,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733872",
+      "last_updated": "2026-03-31T21:39:52.829132",
       "normalized_name": "arrive logistics"
     },
-    "contacts": [
-      {
-        "company_name": "Arrive Logistics",
-        "company_domain": "arrivelogistics.com",
-        "first_name": "Carlyn",
-        "last_name": "O'Hanlon, SHRM",
-        "full_name": "Carlyn O'Hanlon, SHRM",
-        "title": "CP",
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/carlyn-o-hanlon-shrm-cp-38a692135",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Arrive Logistics",
-        "company_domain": "arrivelogistics.com",
-        "first_name": "Tim",
-        "last_name": "Tolari",
-        "full_name": "Tim Tolari",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/timtolari",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Arrive Logistics",
-        "company_domain": "arrivelogistics.com",
-        "first_name": "Kari",
-        "last_name": "Heyens",
-        "full_name": "Kari Heyens",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kariwainwright",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1731,50 +1755,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733878",
+      "last_updated": "2026-03-31T21:39:52.829137",
       "normalized_name": "steelseries"
     },
-    "contacts": [
-      {
-        "company_name": "SteelSeries",
-        "company_domain": "steelseries.com",
-        "first_name": "Amy",
-        "last_name": "Wielgos \ud83c\udfae",
-        "full_name": "Amy Wielgos \ud83c\udfae",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/awielgos",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "SteelSeries",
-        "company_domain": "steelseries.com",
-        "first_name": "Katie",
-        "last_name": "Whiting",
-        "full_name": "Katie Whiting",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/katie-whiting-3479174",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "SteelSeries",
-        "company_domain": "steelseries.com",
-        "first_name": "Jim",
-        "last_name": "Martin",
-        "full_name": "Jim Martin",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/jimmartinchicago",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1796,50 +1780,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733883",
+      "last_updated": "2026-03-31T21:39:52.829140",
       "normalized_name": "quantum rise"
     },
-    "contacts": [
-      {
-        "company_name": "Quantum Rise",
-        "company_domain": "quantumrise.com",
-        "first_name": "Peter",
-        "last_name": "Wilhelm",
-        "full_name": "Peter Wilhelm",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/peterjwilhelm",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Quantum Rise",
-        "company_domain": "quantumrise.com",
-        "first_name": "Darby",
-        "last_name": "Terry",
-        "full_name": "Darby Terry",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/darby-terry-3477b7128",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Quantum Rise",
-        "company_domain": "quantumrise.com",
-        "first_name": "Peter",
-        "last_name": "Selim",
-        "full_name": "Peter Selim",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/peter-selim",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1861,50 +1805,10 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733889",
+      "last_updated": "2026-03-31T21:39:52.829142",
       "normalized_name": "wipfli"
     },
-    "contacts": [
-      {
-        "company_name": "Wipfli",
-        "company_domain": "wipfli.com",
-        "first_name": "Amanda",
-        "last_name": "Feltner",
-        "full_name": "Amanda Feltner",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/amandaafeltner",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Wipfli",
-        "company_domain": "wipfli.com",
-        "first_name": "David",
-        "last_name": "Romero, PHR, MSHR",
-        "full_name": "David Romero, PHR, MSHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/david-romero-phr-mshr-281ab237",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Wipfli",
-        "company_domain": "wipfli.com",
-        "first_name": "Julie",
-        "last_name": "Picchiotti, PHR",
-        "full_name": "Julie Picchiotti, PHR",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/julie-picchiotti-phr-6083b010",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   },
   {
     "company": {
@@ -1926,114 +1830,9 @@
         "builtin_chicago"
       ],
       "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733895",
+      "last_updated": "2026-03-31T21:39:52.829145",
       "normalized_name": "lessen"
     },
-    "contacts": [
-      {
-        "company_name": "Lessen LLC",
-        "company_domain": "lessen.com",
-        "first_name": "Alex",
-        "last_name": "Lindhorst",
-        "full_name": "Alex Lindhorst",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/alex-lindhorst",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Lessen LLC",
-        "company_domain": "lessen.com",
-        "first_name": "Kelly",
-        "last_name": "Graham",
-        "full_name": "Kelly Graham",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/kelly-graham-4014a295",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "Lessen LLC",
-        "company_domain": "lessen.com",
-        "first_name": "Courtney",
-        "last_name": "Weber",
-        "full_name": "Courtney Weber",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/courtney-weber-6736a984",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
-  },
-  {
-    "company": {
-      "name": "ABN AMRO Clearing USA LLC",
-      "domain": "abnamro.com",
-      "industry": null,
-      "employee_count": null,
-      "headquarters_city": "Chicago",
-      "address": null,
-      "has_lnd_budget": true,
-      "lnd_evidence": [
-        "Listed on Built In Chicago with L&D filters (continuing education, tuition reimbursement, job training)"
-      ],
-      "lnd_source_urls": [
-        "https://builtin.com/company/abn-amro-clearing-usa-llc"
-      ],
-      "benefits_summary": null,
-      "sources": [
-        "builtin_chicago"
-      ],
-      "confidence_score": 0.8,
-      "last_updated": "2026-03-31T20:50:34.733901",
-      "normalized_name": "abn amro clearing usa"
-    },
-    "contacts": [
-      {
-        "company_name": "ABN AMRO Clearing USA LLC",
-        "company_domain": "abnamro.com",
-        "first_name": "Ashley",
-        "last_name": "R.",
-        "full_name": "Ashley R.",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/ashley-reiner-hr",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "ABN AMRO Clearing USA LLC",
-        "company_domain": "abnamro.com",
-        "first_name": "Beth",
-        "last_name": "Boeke",
-        "full_name": "Beth Boeke",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/bethboeke",
-        "phone": null,
-        "source": "google_search"
-      },
-      {
-        "company_name": "ABN AMRO Clearing USA LLC",
-        "company_domain": "abnamro.com",
-        "first_name": "Sarah",
-        "last_name": "Sherman",
-        "full_name": "Sarah Sherman",
-        "title": null,
-        "email": null,
-        "email_confidence": null,
-        "linkedin_url": "https://www.linkedin.com/in/sarah-sherman-19b6988b",
-        "phone": null,
-        "source": "google_search"
-      }
-    ]
+    "contacts": []
   }
 ]
