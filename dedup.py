@@ -118,3 +118,10 @@ def deduplicate(companies: list[Company], fuzzy_threshold: int = 85) -> list[Com
 
     logger.info(f"Dedup: {len(companies)} -> {len(merged)} companies")
     return merged
+
+
+if __name__ == "__main__":
+    import sys
+    logging.basicConfig(level=logging.INFO)
+    print("dedup.py is a library module. Import and call deduplicate() from your code.")
+    sys.exit(1)

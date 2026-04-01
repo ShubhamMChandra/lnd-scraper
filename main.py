@@ -124,9 +124,17 @@ def run_scrapers(limit: int = None) -> list[Company]:
     from scrapers.crains import CrainsScraper
     from scrapers.greatplacetowork import GreatPlaceToWorkScraper
     from scrapers.ddg_search import DDGSearchScraper
+    from scrapers.job_boards import JobBoardsScraper
+    from scrapers.sam_gov import SAMGovScraper
+    from scrapers.best_places import BestPlacesScraper
+    from scrapers.associations import AssociationsScraper
 
     scrapers = [
         DDGSearchScraper(CONFIG),          # FREE, unlimited - run first
+        JobBoardsScraper(CONFIG),          # FREE - job board company extraction
+        BestPlacesScraper(CONFIG),         # FREE - best places to work lists
+        AssociationsScraper(CONFIG),       # FREE - industry association directories
+        SAMGovScraper(CONFIG),             # FREE - federal contractor data
         SerpAPIGoogleScraper(CONFIG),
         SerpAPIJobsScraper(CONFIG),
         GlassdoorScraper(CONFIG),

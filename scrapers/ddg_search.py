@@ -46,6 +46,93 @@ COMPANY_QUERIES = [
     # BuiltIn/Glassdoor site-specific
     'site:builtin.com Chicago "education stipend" small company',
     'site:glassdoor.com Chicago "training budget" OR "development budget" review',
+
+    # --- Hospitality / Food Service ---
+    'Chicago hotel "professional development" OR "training budget" employee',
+    'Chicago restaurant group "tuition reimbursement" OR "education benefit"',
+    'Chicago hospitality company "learning and development" OR "career growth"',
+    'Chicago catering company "professional development" OR "training program"',
+    'Chicago food service "education stipend" OR "tuition assistance"',
+
+    # --- Utilities / Energy ---
+    'Chicago energy company "professional development" OR "training budget"',
+    'Chicago utility company "tuition reimbursement" OR "education benefit"',
+    'Chicago renewable energy "learning and development" OR "career development"',
+    'Chicago power company "education stipend" employee benefit',
+
+    # --- Transportation ---
+    'Chicago transportation company "professional development" OR "training budget"',
+    'Chicago trucking OR logistics "tuition reimbursement" OR "education stipend"',
+    'Chicago transit "learning and development" OR "career development" employee',
+    'Chicago freight OR shipping company "training program" OR "education benefit"',
+
+    # --- Staffing / Recruiting ---
+    'Chicago staffing agency "professional development" OR "training budget"',
+    'Chicago recruiting firm "learning and development" OR "education stipend"',
+    'Chicago staffing company "tuition reimbursement" OR "career growth"',
+    'Chicago talent agency "professional development" employee benefit',
+
+    # --- Property Management ---
+    'Chicago property management "professional development" OR "training budget"',
+    'Chicago real estate management "tuition reimbursement" OR "education benefit"',
+    'Chicago building management company "learning and development" employee',
+
+    # --- Veterinary / Dental Groups ---
+    'Chicago veterinary group "professional development" OR "education stipend"',
+    'Chicago dental group "tuition reimbursement" OR "training budget"',
+    'Chicago animal hospital "continuing education" OR "CE stipend"',
+    'Chicago dental practice "learning and development" employee benefit',
+
+    # --- Architecture Firms ---
+    'Chicago architecture firm "professional development" OR "education stipend"',
+    'Chicago architectural company "training budget" OR "tuition reimbursement"',
+    'Chicago design firm "learning and development" OR "career development"',
+
+    # --- Loosened L&D keywords (soft signals) ---
+    '"employee benefits" Chicago company',
+    '"great culture" Chicago company',
+    '"invests in employees" Chicago',
+    '"career growth" Chicago employer',
+    '"employee training" Chicago company',
+    '"professional growth" Chicago',
+    '"skill development" Chicago company',
+    '"continuing education" Chicago employer',
+    '"great benefits" Chicago company employees',
+    '"employee wellness" "professional development" Chicago',
+    '"growth opportunities" Chicago company',
+
+    # --- Job board site-specific queries ---
+    'site:indeed.com Chicago "tuition reimbursement" OR "training budget"',
+    'site:ziprecruiter.com Chicago "professional development" benefits',
+    'site:monster.com Chicago "education stipend"',
+    'site:indeed.com Chicago "learning stipend" OR "development budget"',
+    'site:ziprecruiter.com Chicago "tuition assistance" OR "education benefit"',
+    'site:careerbuilder.com Chicago "professional development" OR "training budget"',
+
+    # --- Association / Conference queries ---
+    '"ATD Chicago" member companies',
+    '"SHRM Chicago" employer sponsors',
+    '"Chicago workforce development" employer partners',
+    '"ATD" "Association for Talent Development" Chicago member',
+    '"CHRA" OR "Chicago Human Resources Association" member companies',
+    '"Chicago training" conference sponsors OR exhibitors',
+
+    # --- More "best places" queries ---
+    '"Chicago Tribune" "top workplaces" 2024 OR 2025',
+    '"best and brightest" Chicago companies 2024 OR 2025',
+    '"Training Magazine" "top 125" Chicago',
+    '"Crain\'s Chicago" "best places to work" 2024 OR 2025',
+    '"Great Place to Work" Chicago certified 2024 OR 2025',
+    '"Fortune" "best workplaces" Chicago 2024 OR 2025',
+    'Chicago "employer of choice" professional development 2024 OR 2025',
+    '"Inc. Best Workplaces" Chicago 2024 OR 2025',
+
+    # --- Dollar-amount queries (high confidence) ---
+    'Chicago company "$1000" OR "$1500" OR "$2000" "learning" OR "development" stipend',
+    'Chicago "$" "per year" "professional development" employee',
+    'Chicago "$500" OR "$1000" "education" OR "training" benefit per employee',
+    'Chicago company "$" "annual" "learning stipend" OR "development stipend"',
+    'Chicago "$2500" OR "$3000" OR "$5000" "professional development" OR "tuition"',
 ]
 
 COMPANY_NOISE = {
@@ -161,24 +248,40 @@ class DDGContactFinder:
         self.ddgs = DDGS()
         self.logger = logging.getLogger("enrichment.ddg_contacts")
 
+    # Multiple query templates to broaden contact discovery
+    CONTACT_QUERIES = [
+        '"{company}" "HR" OR "People" OR "Talent" OR "Learning" director OR VP site:linkedin.com/in',
+        '"{company}" "Office Manager" OR "Benefits" OR "Training Coordinator" OR "Chief of Staff" site:linkedin.com/in',
+        '"{company}" "Operations Director" OR "Admin" OR "Administration" site:linkedin.com/in',
+    ]
+
     def find_hr_contacts(self, company_name: str, domain: Optional[str]) -> list[dict]:
         """Find HR/L&D contacts via DDG LinkedIn search."""
-        query = f'"{company_name}" "HR" OR "People" OR "Talent" OR "Learning" director OR VP site:linkedin.com/in'
-
-        try:
-            results = list(self.ddgs.text(query, max_results=5))
-            time.sleep(2)
-        except Exception as e:
-            self.logger.warning(f"DDG contact search error: {e}")
-            return []
+        all_results = []
+        for query_template in self.CONTACT_QUERIES:
+            query = query_template.format(company=company_name)
+            try:
+                results = list(self.ddgs.text(query, max_results=5))
+                all_results.extend(results)
+                time.sleep(2)
+            except Exception as e:
+                self.logger.warning(f"DDG contact search error: {e}")
+                time.sleep(2)
+                continue
 
         contacts = []
-        for result in results:
+        seen_urls = set()
+        for result in all_results:
             link = result.get("href", "")
             title = result.get("title", "")
 
             if "linkedin.com/in/" not in link:
                 continue
+
+            # Deduplicate by LinkedIn URL
+            if link in seen_urls:
+                continue
+            seen_urls.add(link)
 
             # Parse "First Last - Title - Company | LinkedIn"
             name_match = re.match(r"^(.+?)\s*[-–—|]", title)
@@ -196,11 +299,16 @@ class DDGContactFinder:
             if title_match:
                 person_title = title_match.group(1).strip()
 
-            # Verify HR-related
+            # Verify relevant role
             combined = f"{person_title} {result.get('body', '')}".lower()
-            hr_keywords = ["hr", "human resource", "people", "talent",
-                           "learning", "development", "recruit", "training"]
-            if not any(kw in combined for kw in hr_keywords):
+            relevant_keywords = [
+                "hr", "human resource", "people", "talent",
+                "learning", "development", "recruit", "training",
+                "office manager", "benefits", "training coordinator",
+                "chief of staff", "operations director", "admin",
+                "administration", "people ops", "employee experience",
+            ]
+            if not any(kw in combined for kw in relevant_keywords):
                 continue
 
             contacts.append({

@@ -123,3 +123,10 @@ def export_json(results: list[EnrichedCompany], output_dir: str):
         json.dump(data, f, indent=2)
     logger.info(f"Exported JSON to {path}")
     return path
+
+
+if __name__ == "__main__":
+    import sys
+    logging.basicConfig(level=logging.INFO)
+    print("export.py is a library module. Import and call export_csv/export_excel/export_json from your code.")
+    sys.exit(1)

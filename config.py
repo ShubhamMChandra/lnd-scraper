@@ -20,6 +20,10 @@ CONFIG = {
         "crains": {"enabled": True, "rate_limit": 3.0},
         "greatplacetowork": {"enabled": True, "rate_limit": 3.0},
         "career_pages": {"enabled": True, "rate_limit": 3.0},
+        "job_boards": {"enabled": True, "rate_limit": 2.0},
+        "sam_gov": {"enabled": True, "rate_limit": 3.0},
+        "best_places": {"enabled": True, "rate_limit": 3.0},
+        "associations": {"enabled": True, "rate_limit": 3.0},
     },
 
     "enrichment": {
